@@ -123,14 +123,14 @@ header .betnvest p {
     color: #96c2ff;
 }
 
-header .betnvest a {
+.btnFillColor2 {
     font-family: "Monda";
-    font-size: 16px;
     font-weight: bold;
+    font-size: 16px;
     line-height: 83.73px;
     letter-spacing: 0.025em;
-    text-transform: uppercase;
     text-decoration: none;
+    text-transform: uppercase;
     color: #ffffff;
 }
 
@@ -157,7 +157,8 @@ header div[class*="item"] span:nth-child(4) {
     color: #4194ff;
 }
 
-.about .menuAbout li a {
+.menuAbout li a,
+.menuQuestions li a {
     font-family: "Monda";
     font-size: 16px;
     font-weight: bold;
@@ -168,7 +169,7 @@ header div[class*="item"] span:nth-child(4) {
     color: #0349c6;
 }
 
-.about .menuAbout + a {
+.btnFillColor1 {
     font-family: "Monda";
     font-size: 16px;
     font-weight: bold;
@@ -176,14 +177,6 @@ header div[class*="item"] span:nth-child(4) {
     letter-spacing: 0.025em;
     text-decoration: none;
     color: #ffffff;
-}
-
-.about .description span {
-    font-family: "Monda";
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 83.73px;
-    color: #0349c6;
 }
 
 .about .description p {
@@ -234,17 +227,14 @@ header div[class*="item"] span:nth-child(4) {
     line-height: 83.73px;
     color: #ffffff;
 }
-
-.calculator .menuCalculator + h3,
-.investNow .rate h2 {
+.captionLight {
     font-family: "Monda";
-    font-size: 50px;
     font-weight: bold;
+    font-size: 50px;
     line-height: 83.73px;
     text-transform: uppercase;
     color: #ffffff;
 }
-
 .myTarif .condition li span:first-child {
     font-weight: 300;
     font-size: 15px;
@@ -355,21 +345,7 @@ header div[class*="item"] span:nth-child(4) {
     color: #ffffff;
 }
 
-.calculator .resOut + a,
-.investNow .text + a {
-    font-family: "Monda";
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 83.73px;
-    letter-spacing: 0.025em;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.videoPresentation h2,
-.lastDeposit .container > h2,
-.lastNews .container > h3 {
+.captionBlue {
     font-family: "Monda";
     font-weight: bold;
     font-size: 50px;
@@ -377,7 +353,7 @@ header div[class*="item"] span:nth-child(4) {
     color: #0349c6;
 }
 
-.videoPresentation h1 span {
+.videoPresentation .captionBlue span {
     text-transform: uppercase;
 }
 
@@ -426,16 +402,7 @@ header div[class*="item"] span:nth-child(4) {
 .lastDeposit .lastWith li span:nth-child(3) {
     color: #de1c6e;
 }
-.lastDeposit .lastWith + a,
-.lastNews .itemNews a {
-    font-family: "Monda";
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 83.73px;
-    letter-spacing: 0.025em;
-    text-decoration: none;
-    color: #ffffff;
-}
+
 .investNow .rate p {
     font-weight: 300;
     font-size: 20px;
@@ -502,4 +469,36 @@ footer .copyright {
     color: #96c2ff;
 }
 
-
+/*FAQ*/
+header .faq span {
+    font-family: "Monda";
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 83.73px;
+    color: #ffffff;
+}
+.accordion span {
+    font-family: "Monda";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 70px;
+    color: #012c7a;
+}
+.accordion p {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #012c7a;
+}
+.remained span{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #012c7a;
+}
+.remained p {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #012c7a;
+}
