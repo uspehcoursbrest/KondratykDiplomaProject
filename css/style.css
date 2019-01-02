@@ -50,10 +50,10 @@ ul {
     color: #ffffff;
 }
 
-/*header .clock .icon-clock{*/
-/*font-style: 20px;*/
-/*color: ;*/
-/*}*/
+header .clock .icon-clock{
+color: #ffffff;
+}
+
 header .clock span:nth-child(2) {
     font-size: 35px;
     font-weight: bold;
@@ -84,6 +84,11 @@ header .logReg a {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+header .logReg span.icon-login,
+header .logReg span.icon-register {
+    color: #89b4f4;
 }
 
 .menu li a {
@@ -156,7 +161,9 @@ header div[class*="item"] span:nth-child(4) {
     letter-spacing: 0.025em;
     color: #4194ff;
 }
-
+header div[class*="item"] span.statisticPink {
+    color: #e0186c;
+}
 .menuAbout li a,
 .menuQuestions li a {
     font-family: "Monda";
