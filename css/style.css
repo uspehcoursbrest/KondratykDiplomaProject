@@ -23,6 +23,12 @@ ul {
     padding: 0 15px;
 }
 
+header {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 985px;
+}
+
 .menuSocial span {
     font-size: 19px;
     font-weight: bold;
@@ -30,6 +36,10 @@ ul {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #2f7bde;
+}
+
+.menuSocial img {
+    height: 50px;
 }
 
 .logo span:nth-child(2) {
@@ -50,8 +60,8 @@ ul {
     color: #ffffff;
 }
 
-header .clock .icon-clock{
-color: #ffffff;
+header .clock .icon-clock {
+    color: #ffffff;
 }
 
 header .clock span:nth-child(2) {
@@ -101,7 +111,7 @@ header .logReg span.icon-register {
     color: #ffffff;
 }
 
-.menu li:first-child a {
+.menu li.active a {
     color: #f12f77;
 }
 
@@ -137,16 +147,19 @@ header .betnvest p {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
+    background-color: #e0186c;
 }
-
-header div[class*="item"] span:nth-child(2) {
+header .statistic img {
+    height: 75px;
+}
+header .statistic img + span {
     font-size: 16px;
     line-height: 33px;
     letter-spacing: 0.025em;
     color: #012c7a;
 }
 
-header div[class*="item"] span:nth-child(3) {
+header .statistic span.rateExchange {
     font-size: 20px;
     font-weight: bold;
     line-height: 33px;
@@ -154,16 +167,24 @@ header div[class*="item"] span:nth-child(3) {
     color: #012c7a;
 }
 
-header div[class*="item"] span:nth-child(4) {
+header .statistic span.percent {
     font-size: 16px;
     font-weight: bold;
     line-height: 33px;
     letter-spacing: 0.025em;
     color: #4194ff;
 }
-header div[class*="item"] span.statisticPink {
+
+header .statistic .item3 .percent.active {
     color: #e0186c;
 }
+
+.about {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1070px;
+}
+
 .menuAbout li a,
 .menuQuestions li a {
     font-family: "Monda";
@@ -175,7 +196,9 @@ header div[class*="item"] span.statisticPink {
     text-transform: uppercase;
     color: #0349c6;
 }
-
+.menuAbout li.active a {
+    color: #e0186c;
+}
 .btnFillColor1 {
     font-family: "Monda";
     font-size: 16px;
@@ -201,7 +224,16 @@ header div[class*="item"] span.statisticPink {
     color: #012c7a;
 }
 
-.calculator .menuCalculator li span:nth-child(1) {
+.calculator li:nth-child(1) {
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.menuCalculator span.icon-classic-plan {
+    font-size: 70px;
+}
+
+.menuCalculator .plans span:nth-child(1) {
     font-family: "Monda";
     font-size: 20px;
     font-weight: bold;
@@ -209,7 +241,15 @@ header div[class*="item"] span.statisticPink {
     color: #0349c6;
 }
 
-.calculator .menuCalculator li span:nth-child(2) {
+.menuCalculator .icon-royal-plan {
+    font-size: 70px;
+}
+.calculator li:nth-child(2) {
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 1120px;
+}
+.menuCalculator .plans span:nth-child(2) {
     font-family: "Monda";
     font-size: 35px;
     font-weight: bold;
@@ -218,7 +258,16 @@ header div[class*="item"] span.statisticPink {
     color: #e0186c;
 }
 
-.calculator .menuCalculator li span:nth-child(3) {
+.menuCalculator .icon-expert-plan {
+    font-size: 75px;
+}
+
+.calculator li:nth-child(3) {
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.menuCalculator .plans span:nth-child(3) {
     font-family: "Monda";
     font-size: 13px;
     line-height: 24px;
@@ -227,13 +276,10 @@ header div[class*="item"] span.statisticPink {
     color: #e0186c;
 }
 
-.calculator .menuCalculator li:nth-child(2) span:nth-child(1) {
-    font-family: "Monda";
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 83.73px;
+.calculator .menuCalculator span.whitePlan {
     color: #ffffff;
 }
+
 .captionLight {
     font-family: "Monda";
     font-weight: bold;
@@ -242,6 +288,7 @@ header div[class*="item"] span.statisticPink {
     text-transform: uppercase;
     color: #ffffff;
 }
+
 .myTarif .condition li span:first-child {
     font-weight: 300;
     font-size: 15px;
@@ -359,29 +406,45 @@ header div[class*="item"] span.statisticPink {
     line-height: 83.73px;
     color: #0349c6;
 }
-
+.videoPresentation {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1330px;
+}
 .videoPresentation .captionBlue span {
     text-transform: uppercase;
 }
-
+.result {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 680px;
+}
 .result div[class*="item"] span:nth-child(2) {
     font-weight: bold;
     font-size: 45px;
     line-height: 20.78px;
     color: #0349c6;
 }
+
 .result div[class*="item4"] span:nth-child(2) {
     color: #4194ff;
 }
+
 .result div[class*="item5"] span:nth-child(2) {
     color: #de1c6e;
 }
+
 .result div[class*="item"] span:nth-child(3) {
     font-family: "Monda";
     font-weight: bold;
     font-size: 25px;
     line-height: 34.63px;
     color: #061046;
+}
+.lastDeposit {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1010px;
 }
 .lastDeposit .lastDep li span:first-child,
 .lastDeposit .lastWith li span:first-child {
@@ -391,6 +454,7 @@ header div[class*="item"] span.statisticPink {
     letter-spacing: 0.025em;
     color: #061046;
 }
+
 .lastDeposit .lastDep li span:nth-child(2),
 .lastDeposit .lastWith li span:nth-child(2) {
     font-size: 14px;
@@ -398,6 +462,7 @@ header div[class*="item"] span.statisticPink {
     letter-spacing: 0.025em;
     color: #91a8ce;
 }
+
 .lastDeposit .lastDep li span:nth-child(3),
 .lastDeposit .lastWith li span:nth-child(3) {
     font-weight: bold;
@@ -406,10 +471,15 @@ header div[class*="item"] span.statisticPink {
     letter-spacing: 0.025em;
     color: #4194ff;
 }
+
 .lastDeposit .lastWith li span:nth-child(3) {
     color: #de1c6e;
 }
-
+.investNow {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 775px;
+}
 .investNow .rate p {
     font-weight: 300;
     font-size: 20px;
@@ -417,17 +487,24 @@ header div[class*="item"] span.statisticPink {
     letter-spacing: 0.025em;
     color: #ffffff;
 }
-.investNow .textInvest p  {
+
+.investNow .textInvest p {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #70aeff;
 }
-.investNow .textInvest span  {
+
+.investNow .textInvest span {
     font-weight: bold;
     font-size: 120px;
     line-height: 83.73px;
     color: #70aeff;
+}
+.lastNews {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 905px;
 }
 .lastNews .itemNews span:first-child {
     font-family: "Monda";
@@ -436,6 +513,7 @@ header div[class*="item"] span.statisticPink {
     line-height: 40px;
     color: #061046;
 }
+
 .lastNews .itemNews span:nth-child(3),
 .lastNews .itemNews span:nth-child(4) {
     font-size: 13px;
@@ -443,11 +521,22 @@ header div[class*="item"] span.statisticPink {
     letter-spacing: 0.1em;
     color: #739cdd;
 }
+
 .lastNews .itemNews p {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #012c7a;
+}
+.payments {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 290px;
+}
+footer {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
 }
 footer .contactsForex {
     font-size: 16px;
@@ -456,12 +545,14 @@ footer .contactsForex {
     text-transform: uppercase;
     color: #96c2ff;
 }
+
 footer .adress p {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #ffffff;
 }
+
 footer a {
     font-size: 16px;
     line-height: 30px;
@@ -469,6 +560,7 @@ footer a {
     text-decoration: none;
     color: #ffffff;
 }
+
 footer .copyright {
     font-size: 15px;
     line-height: 30px;
@@ -484,6 +576,7 @@ header .faq span {
     line-height: 83.73px;
     color: #ffffff;
 }
+
 .accordion span {
     font-family: "Monda";
     font-weight: bold;
@@ -491,18 +584,21 @@ header .faq span {
     line-height: 70px;
     color: #012c7a;
 }
+
 .accordion p {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #012c7a;
 }
-.remained span{
+
+.remained span {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     color: #012c7a;
 }
+
 .remained p {
     font-size: 16px;
     line-height: 30px;
