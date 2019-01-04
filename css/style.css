@@ -17,6 +17,12 @@ ul {
     list-style-type: none;
 }
 
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -42,7 +48,21 @@ header {
     height: 50px;
 }
 
-.logo span:nth-child(2) {
+.topheader {
+
+}
+
+.logo {
+    width: 225px;
+    float: left;
+}
+
+.logo img {
+    width: 55px;
+    height: 50px;
+}
+
+.logo img + span {
     font-family: "Monda";
     font-size: 37px;
     font-weight: bold;
@@ -58,6 +78,12 @@ header {
     letter-spacing: 0.33em;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+.clock {
+    width: 330px;
+    float: left;
+    padding: 0 310px;
 }
 
 header .clock .icon-clock {
@@ -87,6 +113,12 @@ header .dateClock span:last-child {
     color: #9ec2f8;
 }
 
+.logReg {
+    width: 270px;
+    float: left;
+    padding: 0 35px;
+}
+
 header .logReg a {
     font-size: 13px;
     line-height: 83.73px;
@@ -99,6 +131,14 @@ header .logReg a {
 header .logReg span.icon-login,
 header .logReg span.icon-register {
     color: #89b4f4;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li + li {
+    margin-left: 69px;
 }
 
 .menu li a {
@@ -149,9 +189,19 @@ header .betnvest p {
     color: #ffffff;
     background-color: #e0186c;
 }
+
+header .statistic [class*="item"] {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    margin-left: 32px;
+}
+
 header .statistic img {
+    width: 90px;
     height: 75px;
 }
+
 header .statistic img + span {
     font-size: 16px;
     line-height: 33px;
@@ -185,6 +235,11 @@ header .statistic .item3 .percent.active {
     height: 1070px;
 }
 
+.about .menuAbout {
+    width: calc(100% - 740px);
+    float: left;
+}
+
 .menuAbout li a,
 .menuQuestions li a {
     font-family: "Monda";
@@ -196,9 +251,11 @@ header .statistic .item3 .percent.active {
     text-transform: uppercase;
     color: #0349c6;
 }
+
 .menuAbout li.active a {
     color: #e0186c;
 }
+
 .btnFillColor1 {
     font-family: "Monda";
     font-size: 16px;
@@ -207,6 +264,12 @@ header .statistic .item3 .percent.active {
     letter-spacing: 0.025em;
     text-decoration: none;
     color: #ffffff;
+    background: #2f7bde;
+}
+
+.about .description {
+    width: 740px;
+    float: left;
 }
 
 .about .description p {
@@ -224,11 +287,15 @@ header .statistic .item3 .percent.active {
     color: #012c7a;
 }
 
-.calculator li:nth-child(1) {
+.calculator {
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: center;
+    height: 1120px;
 }
-
+.menuCalculator ul li {
+    display: inline-block;
+    margin-right: 171px;
+}
 .menuCalculator span.icon-classic-plan {
     font-size: 70px;
 }
@@ -244,11 +311,7 @@ header .statistic .item3 .percent.active {
 .menuCalculator .icon-royal-plan {
     font-size: 70px;
 }
-.calculator li:nth-child(2) {
-    background-repeat: no-repeat;
-    background-position: right center;
-    height: 1120px;
-}
+
 .menuCalculator .plans span:nth-child(2) {
     font-family: "Monda";
     font-size: 35px;
@@ -260,11 +323,6 @@ header .statistic .item3 .percent.active {
 
 .menuCalculator .icon-expert-plan {
     font-size: 75px;
-}
-
-.calculator li:nth-child(3) {
-    background-repeat: no-repeat;
-    background-position: right center;
 }
 
 .menuCalculator .plans span:nth-child(3) {
@@ -288,7 +346,9 @@ header .statistic .item3 .percent.active {
     text-transform: uppercase;
     color: #ffffff;
 }
-
+.myTarif li {
+    display: inline-block;
+}
 .myTarif .condition li span:first-child {
     font-weight: 300;
     font-size: 15px;
@@ -367,7 +427,10 @@ header .statistic .item3 .percent.active {
 .totalProfit li:last-child span {
     color: #2b7fed;
 }
-
+.calculator .calcDep {
+    width: 50%;
+    float: left;
+}
 .calculator .calc label {
     font-size: 15px;
     line-height: 83.73px;
@@ -406,18 +469,24 @@ header .statistic .item3 .percent.active {
     line-height: 83.73px;
     color: #0349c6;
 }
+
 .videoPresentation {
     background-repeat: no-repeat;
     background-position: center;
     height: 1330px;
 }
+
 .videoPresentation .captionBlue span {
     text-transform: uppercase;
 }
+
 .result {
     background-repeat: no-repeat;
     background-position: center;
     height: 680px;
+}
+.result [class*="item"] {
+    display: inline-block;
 }
 .result div[class*="item"] span:nth-child(2) {
     font-weight: bold;
@@ -441,13 +510,17 @@ header .statistic .item3 .percent.active {
     line-height: 34.63px;
     color: #061046;
 }
+
 .lastDeposit {
     background-repeat: no-repeat;
     background-position: center;
     height: 1010px;
 }
-.lastDeposit .lastDep li span:first-child,
-.lastDeposit .lastWith li span:first-child {
+.lastDeposit .lastDepWith {
+    width: 50%;
+    float: left;
+}
+.lastDeposit .lastDepWith li span:first-child {
     font-weight: 500;
     font-size: 16px;
     line-height: 50px;
@@ -455,16 +528,14 @@ header .statistic .item3 .percent.active {
     color: #061046;
 }
 
-.lastDeposit .lastDep li span:nth-child(2),
-.lastDeposit .lastWith li span:nth-child(2) {
+.lastDeposit .lastDepWith li span:nth-child(2) {
     font-size: 14px;
     line-height: 50px;
     letter-spacing: 0.025em;
     color: #91a8ce;
 }
 
-.lastDeposit .lastDep li span:nth-child(3),
-.lastDeposit .lastWith li span:nth-child(3) {
+.lastDeposit .lastDepWith li span:nth-child(3) {
     font-weight: bold;
     font-size: 16px;
     line-height: 50px;
@@ -472,14 +543,16 @@ header .statistic .item3 .percent.active {
     color: #4194ff;
 }
 
-.lastDeposit .lastWith li span:nth-child(3) {
+.lastDeposit .lastDepWith li span.active {
     color: #de1c6e;
 }
+
 .investNow {
     background-repeat: no-repeat;
     background-position: center;
     height: 775px;
 }
+
 .investNow .rate p {
     font-weight: 300;
     font-size: 20px;
@@ -487,7 +560,11 @@ header .statistic .item3 .percent.active {
     letter-spacing: 0.025em;
     color: #ffffff;
 }
-
+.investNow .textInvest {
+    width: 50%;
+    float: left;
+    padding: 0 180px;
+}
 .investNow .textInvest p {
     font-size: 16px;
     line-height: 30px;
@@ -501,11 +578,13 @@ header .statistic .item3 .percent.active {
     line-height: 83.73px;
     color: #70aeff;
 }
+
 .lastNews {
     background-repeat: no-repeat;
     background-position: center;
     height: 905px;
 }
+
 .lastNews .itemNews span:first-child {
     font-family: "Monda";
     font-weight: bold;
@@ -528,16 +607,19 @@ header .statistic .item3 .percent.active {
     letter-spacing: 0.025em;
     color: #012c7a;
 }
+
 .payments {
     background-repeat: no-repeat;
     background-position: center;
     height: 290px;
 }
+
 footer {
     background-repeat: no-repeat;
     background-position: center;
     height: 550px;
 }
+
 footer .contactsForex {
     font-size: 16px;
     line-height: 30px;
