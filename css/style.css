@@ -5,6 +5,7 @@
 body {
     margin: 0 auto;
     font-family: "Brutal Type";
+    width: 1920px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -29,10 +30,27 @@ ul {
     padding: 0 15px;
 }
 
+/*header {*/
+/*background-size: cover;*/
+/*background-repeat: no-repeat;*/
+/*background-position: center;*/
+/*-webkit-background-size: cover;*/
+/*position: relative;*/
+/*z-index: 3;*/
+/*}*/
 header {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 985px;
+    position: relative;
+    z-index: 1;
+}
+
+header .backImg {
+    width: 1920px;
+    height: 1112px;
+    position: absolute;
+    bottom: -141px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
 }
 
 .menuSocial span {
@@ -48,56 +66,72 @@ header {
     height: 50px;
 }
 
-.topheader {
-
-}
-
 .logo {
-    width: 225px;
     float: left;
+    width: 225px;
+    height: 50px;
+    line-height: 1;
+    position: relative;
+    text-align: right;
 }
 
 .logo img {
     width: 55px;
     height: 50px;
+    position: absolute;
+    display: block;
+    left: 0;
 }
 
 .logo img + span {
     font-family: "Monda";
     font-size: 37px;
     font-weight: bold;
-    line-height: 83.73px;
     text-transform: uppercase;
     color: #ffffff;
+    padding-left: 10px;
 }
 
 .logo span:nth-child(3) {
     font-family: "Monda";
     font-size: 13px;
-    line-height: 83.73px;
     letter-spacing: 0.33em;
     text-transform: uppercase;
     color: #ffffff;
 }
 
 .clock {
-    width: 330px;
     float: left;
-    padding: 0 310px;
+    width: 330px;
+    margin-left: 310px;
 }
 
 header .clock .icon-clock {
+    font-size: 21px;
     color: #ffffff;
+    margin-right: 32px;
+}
+
+header .clock .time {
+    display: inline-block;
+    margin-left: 32px;
 }
 
 header .clock span:nth-child(2) {
     font-size: 35px;
     font-weight: bold;
-    line-height: 83.73px;
     letter-spacing: 0.025em;
     color: #ffffff;
 }
 
+header .dateClock {
+    display: inline-block;
+    margin-left: 12px;
+}
+header .dateClock span {
+    display: block;
+
+}
 header .dateClock span:first-child {
     font-size: 12px;
     line-height: 16px;
@@ -114,25 +148,36 @@ header .dateClock span:last-child {
 }
 
 .logReg {
-    width: 270px;
     float: left;
-    padding: 0 35px;
+    width: 270px;
+    margin-left: 34px;
+}
+
+.logReg .login {
+    display: inline-block;
+}
+
+.logReg .register {
+    display: inline-block;
+    margin-left: 36px;
 }
 
 header .logReg a {
     font-size: 13px;
-    line-height: 83.73px;
     letter-spacing: 0.1em;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
+    margin-left: 13px;
 }
 
 header .logReg span.icon-login,
 header .logReg span.icon-register {
     color: #89b4f4;
 }
-
+header .menu li {
+    margin-top: 81px;
+}
 .menu li {
     display: inline-block;
 }
@@ -144,7 +189,6 @@ header .logReg span.icon-register {
 .menu li a {
     font-size: 15px;
     font-weight: 500;
-    line-height: 83.73px;
     letter-spacing: 0.1em;
     text-decoration: none;
     text-transform: uppercase;
@@ -155,10 +199,15 @@ header .logReg span.icon-register {
     color: #f12f77;
 }
 
+header .betnvest {
+    margin-top: 153px;
+    line-height: 1;
+    width: 692px;
+}
+
 header .betnvest span {
     font-family: "Monda";
     font-weight: bold;
-    line-height: 83.73px;
     color: #ffffff;
 }
 
@@ -176,6 +225,7 @@ header .betnvest p {
     line-height: 33px;
     letter-spacing: 0.025em;
     color: #96c2ff;
+    padding-top: 66px;
 }
 
 .btnFillColor2 {
@@ -188,20 +238,40 @@ header .betnvest p {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #e0186c;
+    padding: 26px 87px 26px 32px;
+}
+
+header .statistic {
+    text-align: right;
 }
 
 header .statistic [class*="item"] {
+    width: 235px;
+    height: 80px;
+    padding-left: 104px;
     display: inline-block;
-    text-align: right;
     vertical-align: middle;
+    position: relative;
+}
+
+header .statistic .item2,
+header .statistic .item3 {
     margin-left: 32px;
 }
 
-header .statistic img {
+header .statistic [class*="item"] img {
     width: 90px;
     height: 75px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -28px;
 }
-
+header .statistic span {
+    display: block;
+    text-align: left;
+}
 header .statistic img + span {
     font-size: 16px;
     line-height: 33px;
@@ -230,14 +300,30 @@ header .statistic .item3 .percent.active {
 }
 
 .about {
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 1070px;
 }
+
+/*.about {*/
+/*position: relative;*/
+/*z-index: 1;*/
+/*}*/
+/*.about .backImg {*/
+/*position: absolute;*/
+/*top: -141px;*/
+/*bottom: -178px;*/
+/*left: 50%;*/
+/*margin-left: -960px;*/
+/*width: 1920px;*/
+/*height: 1071px;*/
+/*z-index: -1;*/
+/*}*/
 
 .about .menuAbout {
     width: calc(100% - 740px);
     float: left;
+    padding-top: 327px;
 }
 
 .menuAbout li a,
@@ -270,6 +356,8 @@ header .statistic .item3 .percent.active {
 .about .description {
     width: 740px;
     float: left;
+    padding-top: 285px;
+    padding-bottom: 300px;
 }
 
 .about .description p {
@@ -288,28 +376,54 @@ header .statistic .item3 .percent.active {
 }
 
 .calculator {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1120px;
-}
-.menuCalculator ul li {
-    display: inline-block;
-    margin-right: 171px;
-}
-.menuCalculator span.icon-classic-plan {
-    font-size: 70px;
+    position: relative;
+    z-index: 3;
 }
 
+.calculator .backImg {
+    width: 1920px;
+    height: 1122px;
+    position: absolute;
+    top: -178px;
+    bottom: -75px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -3;
+}
+/*.menuCalculator {*/
+    /*text-align: left;*/
+/*}*/
+.menuCalculator li {
+    display: inline-block;
+    /*padding-left: 100px;*/
+    position: relative;
+}
+.menuCalculator .classicPlan {
+    margin-left: 50px;
+    margin-right: 166px;
+}
+.menuCalculator .royalPlan {
+    margin-right: 166px;
+}
+
+.menuCalculator [class*="icon"] {
+    font-size: 70px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -35px;
+}
+.menuCalculator .plans {
+    padding-left: 100px;
+}
+.menuCalculator .plans span {
+    display: block;
+}
 .menuCalculator .plans span:nth-child(1) {
     font-family: "Monda";
     font-size: 20px;
     font-weight: bold;
-    line-height: 83.73px;
     color: #0349c6;
-}
-
-.menuCalculator .icon-royal-plan {
-    font-size: 70px;
 }
 
 .menuCalculator .plans span:nth-child(2) {
@@ -319,10 +433,6 @@ header .statistic .item3 .percent.active {
     line-height: 40px;
     letter-spacing: -0.05em;
     color: #e0186c;
-}
-
-.menuCalculator .icon-expert-plan {
-    font-size: 75px;
 }
 
 .menuCalculator .plans span:nth-child(3) {
@@ -345,9 +455,28 @@ header .statistic .item3 .percent.active {
     line-height: 83.73px;
     text-transform: uppercase;
     color: #ffffff;
+    text-align: center;
 }
-.myTarif li {
+.myTarif {
+    margin-bottom: 120px;
+}
+.myTarif .condition,
+.myTarif .minMaxDeposit,
+.myTarif .dailyProfit,
+.myTarif .totalProfit {
     display: inline-block;
+}
+.myTarif .condition {
+    margin-left: 80px;
+}
+.myTarif .minMaxDeposit {
+    margin-left: 61px;
+}
+.myTarif .dailyProfit {
+    margin-left: 50px;
+}
+.myTarif .totalProfit {
+    margin-left: 87px;
 }
 .myTarif .condition li span:first-child {
     font-weight: 300;
@@ -397,19 +526,10 @@ header .statistic .item3 .percent.active {
     font-weight: 300;
 }
 
-.dailyProfit li:first-child span:first-child {
-    font-family: "Myriad Pro";
-    font-size: 15px;
-    line-height: 120px;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.dailyProfit li:first-child span:last-child,
+.dailyProfit li:first-child span,
 .totalProfit li:first-child span {
     font-size: 15px;
-    line-height: 120px;
+    line-height: 50px;
     letter-spacing: 0.025em;
     text-transform: uppercase;
     color: #ffffff;
@@ -427,17 +547,35 @@ header .statistic .item3 .percent.active {
 .totalProfit li:last-child span {
     color: #2b7fed;
 }
+
 .calculator .calcDep {
+    text-align: center;
     width: 50%;
     float: left;
+    padding: 0 30px 0 270px;
+}
+.calculator .calcDep label,
+.calculator .calcDep input {
+    display: block;
+    /*text-align: center;*/
 }
 .calculator .calc label {
     font-size: 15px;
-    line-height: 83.73px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #96c2ff;
 }
+.calculator .calc input,
+.calculator .calc select,
+.calcReinvest input {
+    background-color: #0b47ad;
+    border-color: #3168cb;
+}
+/*.calcReinvest input {*/
+    /*display: block;*/
+    /*text-align: center;*/
+/*}*/
+
 
 .calculator #plan {
     font-weight: 500;
@@ -446,11 +584,13 @@ header .statistic .item3 .percent.active {
     letter-spacing: 0.05em;
     color: #ffffff;
 }
-
+.calculator .resOut span {
+    display: block;
+    text-align: center;
+}
 .calculator .resOut span:first-child {
     font-weight: 300;
     font-size: 15px;
-    line-height: 55px;
     text-transform: uppercase;
     color: #96c2ff;
 }
@@ -469,24 +609,56 @@ header .statistic .item3 .percent.active {
     line-height: 83.73px;
     color: #0349c6;
 }
-
 .videoPresentation {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1330px;
+    position: relative;
+    z-index: 1;
+}
+.videoPresentation .backImg {
+    width: 1920px;
+    height: 1326px;
+    position: absolute;
+    top: -75px;
+    bottom: -75px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
 }
 
 .videoPresentation .captionBlue span {
     text-transform: uppercase;
+    padding-top: 230px;
 }
 
+/*.result {*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*height: 680px;*/
+/*}*/
 .result {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 680px;
+    position: relative;
+    z-index: 1;
 }
+.result .backImg {
+    width: 2026px;
+    height: 682px;
+    position: absolute;
+    top: -75px;
+    bottom: -75px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
+
 .result [class*="item"] {
     display: inline-block;
+}
+.result [class*="item"] img,
+.result [class*="item"] span {
+    display: block;
+}
+.result [class*="item"] img {
+    width: 42px;
+    height: 36px;
 }
 .result div[class*="item"] span:nth-child(2) {
     font-weight: bold;
@@ -511,14 +683,34 @@ header .statistic .item3 .percent.active {
     color: #061046;
 }
 
+/*.lastDeposit {*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+/*}*/
 .lastDeposit {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1010px;
+    position: relative;
+    z-index: 1;
 }
+.lastDeposit .backImg {
+    width: 2705px;
+    height: 1380px;
+    position: absolute;
+    top: -75px;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
+
 .lastDeposit .lastDepWith {
     width: 50%;
     float: left;
+    display: table;
+}
+.lastDeposit .lastDepWith li {
+    display: table-row;
 }
 .lastDeposit .lastDepWith li span:first-child {
     font-weight: 500;
@@ -526,6 +718,7 @@ header .statistic .item3 .percent.active {
     line-height: 50px;
     letter-spacing: 0.025em;
     color: #061046;
+    display: table-cell;
 }
 
 .lastDeposit .lastDepWith li span:nth-child(2) {
@@ -533,6 +726,8 @@ header .statistic .item3 .percent.active {
     line-height: 50px;
     letter-spacing: 0.025em;
     color: #91a8ce;
+    display: table-cell;
+    padding-left: 50px;
 }
 
 .lastDeposit .lastDepWith li span:nth-child(3) {
@@ -541,16 +736,33 @@ header .statistic .item3 .percent.active {
     line-height: 50px;
     letter-spacing: 0.025em;
     color: #4194ff;
+    display: table-cell;
+    padding-left: 56px;
 }
 
 .lastDeposit .lastDepWith li span.active {
     color: #de1c6e;
 }
 
+/*.investNow {*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*height: 775px;*/
+/*}*/
 .investNow {
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.investNow .backImg {
+    width: 1954px;
     height: 775px;
+    position: absolute;
+    top: -70px;
+    bottom: -75px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+
 }
 
 .investNow .rate p {
@@ -559,12 +771,15 @@ header .statistic .item3 .percent.active {
     line-height: 33px;
     letter-spacing: 0.025em;
     color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
 }
+
 .investNow .textInvest {
     width: 50%;
     float: left;
-    padding: 0 180px;
 }
+
 .investNow .textInvest p {
     font-size: 16px;
     line-height: 30px;
@@ -579,12 +794,23 @@ header .statistic .item3 .percent.active {
     color: #70aeff;
 }
 
+/*.lastNews {*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*height: 905px;*/
+/*}*/
 .lastNews {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 905px;
+    position: relative;
+    z-index: 1;
 }
-
+.lastNews .backImg {
+    width: 1963px;
+    height: 903px;
+    position: absolute;
+    left: 50%;
+    margin-left: -982px;
+    z-index: -1;
+}
 .lastNews .itemNews span:first-child {
     font-family: "Monda";
     font-weight: bold;
@@ -608,18 +834,55 @@ header .statistic .item3 .percent.active {
     color: #012c7a;
 }
 
+/*.payments {*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*height: 290px;*/
+/*}*/
 .payments {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 290px;
+    position: relative;
+    z-index: 1;
+}
+.payments ul.pay {
+    display: table;
+    width: 100%;
+}
+.payments ul.pay li {
+    display: table-cell;
+    vertical-align: middle;
+}
+.payments ul.pay li img {
+    color: #aeb7cb;
+}
+.payments .backImg {
+    width: 1932px;
+    height: 291px;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -966px;
+    z-index: -1;
 }
 
 footer {
     background-repeat: no-repeat;
     background-position: center;
-    height: 550px;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
-
+.table {
+    display: table;
+    width: 100%;
+}
+.tCell {
+    display: table-cell;
+}
+footer .contactsForex,
+footer .logoWrap,
+footer .social {
+    width: 33.3333%;
+    vertical-align: middle;
+}
 footer .contactsForex {
     font-size: 16px;
     line-height: 30px;
@@ -634,7 +897,42 @@ footer .adress p {
     letter-spacing: 0.025em;
     color: #ffffff;
 }
+footer .logoWrap {
+    text-align: center;
+}
+footer .logoFooter img,
+footer .logoFooter span,
+footer a {
+    display: block;
+}
+.logoFooter {
+    padding-top: 147px;
+    position: relative;
+}
+.logoFooter img {
+    width: 119px;
+    height: 104px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -60px;
+}
+.logoFooter img + span {
+    font-family: "Monda";
+    font-size: 37px;
+    line-height: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
 
+.logoFooter span:nth-child(3) {
+    font-family: "Monda";
+    font-size: 13px;
+    letter-spacing: 0.33em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
 footer a {
     font-size: 16px;
     line-height: 30px;
@@ -648,9 +946,22 @@ footer .copyright {
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #96c2ff;
+    margin-top: 40px;
 }
-
+footer .social {
+    text-align: right;
+}
+footer .menu li {
+    margin-top: 100px;
+}
 /*FAQ*/
+header .backImgFaq {
+    width: 1920px;
+    height: 517px;
+    position: absolute;
+    bottom: -141px;
+    z-index: -1;
+}
 header .faq span {
     font-family: "Monda";
     font-weight: bold;
@@ -658,7 +969,34 @@ header .faq span {
     line-height: 83.73px;
     color: #ffffff;
 }
-
+.askQuestions {
+    position: relative;
+    z-index: 1;
+}
+.askQuestions .backImg {
+    width: 1920px;
+    height: 1427px;
+    position: absolute;
+    top: -141px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
+.menuQuestions {
+    float: left;
+    clear: (100% - 800px);
+    padding-left: 46px;
+}
+.questions {
+    float: left;
+    width: 800px;
+}
+.questions span {
+    padding-left: 173px;
+}
+.questions p {
+    padding-left: 146px;
+}
 .accordion span {
     font-family: "Monda";
     font-weight: bold;
@@ -673,7 +1011,32 @@ header .faq span {
     letter-spacing: 0.025em;
     color: #012c7a;
 }
-
+.remainQuestions {
+    position: relative;
+    z-index: 1;
+    margin-top: 256px;
+}
+.remainQuestions .backImg {
+    width: 601px;
+    height: 536px;
+    position: absolute;
+    top: 0;
+    left: 1317px;
+    z-index: -1;
+}
+.remainQuestions .captionBlue {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.remainQuestions .table {
+    display: table;
+    width: 100%;
+    vertical-align: bottom;
+}
+.remained {
+    display: table-cell;
+    width: 720px;
+}
 .remained span {
     font-weight: 500;
     font-size: 20px;
@@ -686,4 +1049,10 @@ header .faq span {
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #012c7a;
+    padding-top: 45px;
+}
+.writeUs {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
 }
