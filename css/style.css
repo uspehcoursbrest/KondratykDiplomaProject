@@ -47,7 +47,8 @@ header .backImg {
     width: 1920px;
     height: 1112px;
     position: absolute;
-    bottom: -141px;
+    /*bottom: -141px;*/
+    top: 0;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
@@ -236,13 +237,14 @@ header .betnvest p {
     font-family: "Monda";
     font-weight: bold;
     font-size: 16px;
-    line-height: 83.73px;
     letter-spacing: 0.025em;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #e0186c;
     padding: 26px 87px 26px 32px;
+    display: inline-block;
+    margin-top: 88px;
 }
 
 header .statistic {
