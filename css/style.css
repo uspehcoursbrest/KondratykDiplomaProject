@@ -8,6 +8,10 @@ body {
     width: 1920px;
 }
 
+.bodyWrap {
+    overflow: hidden;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -30,28 +34,25 @@ ul {
     padding: 0 15px;
 }
 
-/*header {*/
-/*background-size: cover;*/
-/*background-repeat: no-repeat;*/
-/*background-position: center;*/
-/*-webkit-background-size: cover;*/
-/*position: relative;*/
-/*z-index: 3;*/
-/*}*/
 header {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 header .backImg {
     width: 1920px;
-    height: 1112px;
+    height: 987px;
     position: absolute;
     /*bottom: -141px;*/
     top: 0;
     left: 50%;
     margin-left: -960px;
-    z-index: -1;
+    z-index: -2;
+}
+
+.menuSocial {
+    position: relative;
+    z-index: 1;
 }
 
 .menuSocial span {
@@ -61,10 +62,39 @@ header .backImg {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #2f7bde;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 192px;
+    margin-top: 510px;
 }
 
 .menuSocial img {
     height: 50px;
+}
+
+.menuSocial li.social1 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 170px;
+    margin-top: 614px;
+}
+
+.menuSocial li.social2 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 170px;
+    margin-top: 704px;
+}
+
+.menuSocial li.social3 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 170px;
+    margin-top: 794px;
 }
 
 .logo {
@@ -72,16 +102,18 @@ header .backImg {
     width: 225px;
     height: 50px;
     line-height: 1;
+    padding-left: 60px;
     position: relative;
-    text-align: right;
+    margin-top: 45px;
 }
 
 .logo img {
-    width: 55px;
-    height: 50px;
+    width: 54px;
+    height: 48px;
     position: absolute;
-    display: block;
+    display: inline-block;
     left: 0;
+    top: 0;
 }
 
 .logo img + span {
@@ -90,7 +122,6 @@ header .backImg {
     font-weight: bold;
     text-transform: uppercase;
     color: #ffffff;
-    padding-left: 10px;
 }
 
 .logo span:nth-child(3) {
@@ -105,17 +136,23 @@ header .backImg {
     float: left;
     width: 330px;
     margin-left: 310px;
+    margin-top: 50px;
+    line-height: 50px;
 }
 
 header .clock .icon-clock {
     font-size: 21px;
     color: #ffffff;
-    margin-right: 32px;
+    position: absolute;
+    display: block;
+    top: 14px;
+    left: 0;
 }
 
 header .clock .time {
     display: inline-block;
-    margin-left: 32px;
+    padding-left: 57px;
+    position: relative;
 }
 
 header .clock span:nth-child(2) {
@@ -154,6 +191,8 @@ header .dateClock span:last-child {
     float: left;
     width: 270px;
     margin-left: 34px;
+    margin-top: 50px;
+    line-height: 50px;
 }
 
 .logReg .login {
@@ -179,8 +218,12 @@ header .logReg span.icon-register {
     color: #89b4f4;
 }
 
+header .menu li:first-child {
+    margin-left: 5px;
+}
+
 header .menu li {
-    margin-top: 81px;
+    margin-top: 77px;
 }
 
 .menu li {
@@ -205,7 +248,7 @@ header .menu li {
 }
 
 header .betnvest {
-    margin-top: 153px;
+    margin-top: 110px;
     line-height: 1;
     width: 692px;
 }
@@ -218,6 +261,7 @@ header .betnvest span {
 
 header .betnvest span:first-child {
     font-size: 133px;
+    margin-left: 4px;
 }
 
 header .betnvest span:nth-child(2) {
@@ -230,7 +274,7 @@ header .betnvest p {
     line-height: 33px;
     letter-spacing: 0.025em;
     color: #96c2ff;
-    padding-top: 66px;
+    padding-top: 82px;
 }
 
 .btnFillColor2 {
@@ -244,12 +288,13 @@ header .betnvest p {
     background-color: #e0186c;
     padding: 26px 87px 26px 32px;
     display: inline-block;
-    margin-top: 88px;
+    margin-top: 80px;
 }
 
 header .statistic {
-    text-align: right;
-    margin-top: 200px;
+    margin-left: 435px;
+    margin-top: 55px;
+    width: 100%;
 }
 
 header .statistic [class*="item"] {
@@ -308,31 +353,26 @@ header .statistic .item3 .percent.active {
     color: #e0186c;
 }
 
+
 .about {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    z-index: 1;
 }
 
-/*.about {*/
-/*position: relative;*/
-/*z-index: 1;*/
-/*}*/
-/*.about .backImg {*/
-/*position: absolute;*/
-/*top: -141px;*/
-/*bottom: -178px;*/
-/*left: 50%;*/
-/*margin-left: -960px;*/
-/*width: 1920px;*/
-/*height: 1071px;*/
-/*z-index: -1;*/
-/*}*/
+.about .backImg {
+    position: absolute;
+    top: -141px;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 1339px;
+    z-index: -1;
+}
 
 .about .menuAbout {
     width: calc(100% - 740px);
     float: left;
-    padding-top: 327px;
+    margin-top: 182px;
 }
 
 .menuAbout li a,
@@ -340,14 +380,20 @@ header .statistic .item3 .percent.active {
     font-family: "Monda";
     font-size: 16px;
     font-weight: bold;
-    line-height: 110px;
     letter-spacing: 0.025em;
     text-decoration: none;
     text-transform: uppercase;
     color: #0349c6;
+    display: inline-block;
 }
 
-.menuAbout li.active a {
+.menuAbout li + li,
+.menuQuestions li + li {
+    padding-top: 98px;
+}
+
+.menuAbout li.active a,
+.menuQuestions li.active a {
     color: #e0186c;
 }
 
@@ -355,18 +401,20 @@ header .statistic .item3 .percent.active {
     font-family: "Monda";
     font-size: 16px;
     font-weight: bold;
-    line-height: 83.73px;
+    /*line-height: 83.73px;*/
     letter-spacing: 0.025em;
     text-decoration: none;
     color: #ffffff;
     background: #2f7bde;
+    padding: 20px;
+    display: inline-block;
+    margin-top: 156px;
 }
 
 .about .description {
     width: 740px;
     float: left;
-    padding-top: 285px;
-    padding-bottom: 300px;
+    margin-top: 140px;
 }
 
 .about .description p {
@@ -376,28 +424,32 @@ header .statistic .item3 .percent.active {
     color: #012c7a;
 }
 
-.about .description p:nth-child(2) {
+.about .description span + p {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #012c7a;
+    padding-top: 50px;
+}
+
+.about .description p + p {
+    padding-top: 40px;
 }
 
 .calculator {
     position: relative;
-    z-index: 3;
+    z-index: 1;
 }
 
 .calculator .backImg {
     width: 1920px;
     height: 1122px;
     position: absolute;
-    top: -178px;
-    bottom: -75px;
+    top: 122px;
     left: 50%;
     margin-left: -960px;
-    z-index: -3;
+    z-index: -1;
 }
 
 /*.menuCalculator {*/
@@ -407,6 +459,7 @@ header .statistic .item3 .percent.active {
     display: inline-block;
     /*padding-left: 100px;*/
     position: relative;
+    margin-top: 163px;
 }
 
 .menuCalculator .classicPlan {
@@ -467,14 +520,16 @@ header .statistic .item3 .percent.active {
     font-family: "Monda";
     font-weight: bold;
     font-size: 50px;
-    line-height: 83.73px;
+    line-height: 1;
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
+    margin-top: 140px;
 }
 
 .myTarif {
-    margin-bottom: 120px;
+    margin-top: 140px;
+    /*margin-bottom: 120px;*/
 }
 
 .myTarif .condition,
@@ -571,23 +626,61 @@ header .statistic .item3 .percent.active {
 }
 
 .calculator .calcDep {
-    text-align: center;
-    width: 50%;
-    float: left;
-    padding: 0 30px 0 270px;
+    /*text-align: center;*/
+    /*width: 50%;*/
+    /*float: left;*/
+    /*padding: 0 30px 0 270px;*/
 }
 
-.calculator .calcDep label,
-.calculator .calcDep input {
-    display: block;
-    /*text-align: center;*/
+.calc {
+    margin-top: 132px;
 }
+
+.calc .calcDep1 {
+    float: left;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+.calc .calcDep2 {
+    float: left;
+    width: 50%;
+    display: block;
+}
+
+.calculator .calcDep1 input,
+.calculator .calcDep2 select {
+    width: 300px;
+    height: 55px;
+    display: block;
+    margin-top: 22px;
+}
+
+.calculator .calcDep1 input {
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    padding-left: 19px;
+}
+
+/*.calculator .calcDep1 input {*/
+/*margin-right: 15px;*/
+/*margin-top: 20px;*/
+/*}*/
+/*.calculator .calcDep2 select {*/
+/*margin-left: 15px;*/
+/*margin-top: 20px;*/
+/*}*/
 
 .calculator .calc label {
     font-size: 15px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #96c2ff;
+    display: inline-block;
+    text-align: center;
 }
 
 .calculator .calc input,
@@ -609,6 +702,11 @@ header .statistic .item3 .percent.active {
     line-height: 83.73px;
     letter-spacing: 0.05em;
     color: #ffffff;
+    padding-left: 19px;
+}
+
+.calcReinvest {
+    margin-top: 64px;
 }
 
 .calculator .resOut span {
@@ -621,6 +719,7 @@ header .statistic .item3 .percent.active {
     font-size: 15px;
     text-transform: uppercase;
     color: #96c2ff;
+    margin-top: 41px;
 }
 
 .calculator .resOut span:last-child {
@@ -630,11 +729,16 @@ header .statistic .item3 .percent.active {
     color: #ffffff;
 }
 
+.calculator .btnFillColor2 {
+    display: inline-block;
+    margin-top: 59px;
+    margin-left: 452px;
+}
+
 .captionBlue {
     font-family: "Monda";
     font-weight: bold;
     font-size: 50px;
-    line-height: 83.73px;
     color: #0349c6;
 }
 
@@ -648,15 +752,19 @@ header .statistic .item3 .percent.active {
     height: 1326px;
     position: absolute;
     top: -75px;
-    bottom: -75px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
 }
 
-.videoPresentation .captionBlue span {
-    text-transform: uppercase;
-    padding-top: 230px;
+.videoPresentation .captionBlue {
+    margin-top: 124px;
+}
+
+.videoPresentation .video {
+    margin-top: 105px;
+    width: 1170px;
+    height: 745px;
 }
 
 /*.result {*/
@@ -674,24 +782,59 @@ header .statistic .item3 .percent.active {
     height: 682px;
     position: absolute;
     top: -75px;
-    bottom: -75px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
 }
 
-.result [class*="item"] {
+.result .topResult [class*="item"] {
     display: inline-block;
+    margin-top: 290px;
+    position: relative;
+    width: 270px;
+}
+
+.result .item1 {
+    margin-left: 65px;
+}
+
+.result .item2 {
+    margin-left: 130px;
+}
+
+.result .item3 {
+    margin-left: 139px;
+}
+
+.result .downResult [class*="item"] {
+    display: inline-block;
+    margin-top: 36px;
+}
+
+.result .item4 {
+    margin-left: 646px;
+}
+
+.result .item5 {
+    margin-left: 86px;
 }
 
 .result [class*="item"] img,
 .result [class*="item"] span {
     display: block;
+    text-align: center;
 }
 
 .result [class*="item"] img {
     width: 42px;
     height: 36px;
+    position: absolute;
+}
+
+.result .topResult [class*="item"] img {
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
 }
 
 .result div[class*="item"] span:nth-child(2) {
@@ -699,6 +842,7 @@ header .statistic .item3 .percent.active {
     font-size: 45px;
     line-height: 20.78px;
     color: #0349c6;
+    padding-top: 87px;
 }
 
 .result div[class*="item4"] span:nth-child(2) {
@@ -715,6 +859,7 @@ header .statistic .item3 .percent.active {
     font-size: 25px;
     line-height: 34.63px;
     color: #061046;
+    margin-top: 65px;
 }
 
 /*.lastDeposit {*/
@@ -729,22 +874,40 @@ header .statistic .item3 .percent.active {
 }
 
 .lastDeposit .backImg {
-    width: 2705px;
+    width: 1920px;
     height: 1380px;
     position: absolute;
     top: -75px;
-    bottom: -70px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
+}
+
+.lastDeposit h2 {
+    margin-top: 200px;
+    line-height: 1;
 }
 
 .lastDeposit .lastDepWith {
     width: 50%;
     float: left;
     display: table;
+    margin-top: 95px;
+    padding-right: 78px;
+    position: relative;
 }
 
+.lastDeposit .lastDepWith img {
+    height: 32px;
+    width: 36px;
+    /*display: table-cell;*/
+}
+
+/*.lastDeposit .lastDepWith li:first-child img {*/
+/*position: absolute;*/
+/*top: 0%;*/
+/*left: 100%;*/
+/*}*/
 .lastDeposit .lastDepWith li {
     display: table-row;
 }
@@ -781,6 +944,11 @@ header .statistic .item3 .percent.active {
     color: #de1c6e;
 }
 
+.lastDeposit .btnFillColor1 {
+    margin-top: 108px;
+    margin-left: 502px;
+}
+
 /*.investNow {*/
 /*background-repeat: no-repeat;*/
 /*background-position: center;*/
@@ -792,15 +960,18 @@ header .statistic .item3 .percent.active {
 }
 
 .investNow .backImg {
-    width: 1954px;
+    width: 1920px;
     height: 775px;
     position: absolute;
     top: -70px;
-    bottom: -75px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
 
+}
+
+.investNow .rate h2 {
+    margin-top: 150px;
 }
 
 .investNow .rate p {
@@ -813,30 +984,69 @@ header .statistic .item3 .percent.active {
     padding-top: 60px;
 }
 
-.investNow .textInvest {
-    width: 50%;
+.investNow .textInvest1,
+.investNow .textInvest2 {
+    /*width: 50%;*/
     float: left;
+    margin-top: 140px;
 }
 
-.investNow .textInvest p {
+.investNow .textInvest1 p,
+.investNow .textInvest2 p {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #70aeff;
 }
 
-.investNow .textInvest span {
+.investNow .textInvest1 span,
+.investNow .textInvest2 span {
     font-weight: bold;
     font-size: 120px;
     line-height: 83.73px;
     color: #70aeff;
 }
 
-/*.lastNews {*/
-/*background-repeat: no-repeat;*/
-/*background-position: center;*/
-/*height: 905px;*/
-/*}*/
+.investNow .textInvest1 {
+    width: 507px;
+    padding-right: 225px;
+    margin-left: 6px;
+    margin-right: 181px;
+    position: relative;
+}
+
+.investNow .textInvest1 p {
+    text-align: right;
+}
+
+.investNow .textInvest1 span {
+    position: absolute;
+    top: -11px;
+    right: 0;
+}
+
+.investNow .textInvest2 {
+    width: 464px;
+    padding-left: 190px;
+    margin-right: 12px;
+    position: relative;
+}
+
+.investNow .textInvest2 p {
+    text-align: left;
+}
+
+.investNow .textInvest2 span {
+    position: absolute;
+    top: -11px;
+    left: 0px;
+}
+
+.investNow .btnFillColor2 {
+    margin-top: 177px;
+    margin-left: 451px;
+}
+
 .lastNews {
     position: relative;
     z-index: 1;
@@ -851,12 +1061,28 @@ header .statistic .item3 .percent.active {
     z-index: -1;
 }
 
+.lastNews .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lastNews .itemNews {
+    width: 333px;
+    margin-top: 112px;
+}
+
+.lastNews h3 {
+    margin-top: 80px;
+}
+
 .lastNews .itemNews span:first-child {
     font-family: "Monda";
     font-weight: bold;
     font-size: 30px;
     line-height: 40px;
     color: #061046;
+    display: block;
 }
 
 .lastNews .itemNews span:nth-child(3),
@@ -872,6 +1098,11 @@ header .statistic .item3 .percent.active {
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #012c7a;
+    display: block;
+}
+
+.lastNews .itemNews a {
+    margin-top: 58px;
 }
 
 /*.payments {*/
@@ -885,26 +1116,16 @@ header .statistic .item3 .percent.active {
 }
 
 .payments ul.pay {
-    display: table;
-    width: 100%;
-}
-
-.payments ul.pay li {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.payments ul.pay li img {
-    color: #aeb7cb;
+    margin-top: 216px;
 }
 
 .payments .backImg {
-    width: 1932px;
+    width: 1920px;
     height: 291px;
     position: absolute;
     bottom: -70px;
     left: 50%;
-    margin-left: -966px;
+    margin-left: -960px;
     z-index: -1;
 }
 
@@ -924,11 +1145,15 @@ footer {
     display: table-cell;
 }
 
-footer .contactsForex,
+footer .contactsFooter,
 footer .logoWrap,
 footer .social {
     width: 33.3333%;
     vertical-align: middle;
+}
+
+footer .contactsFooter {
+    margin-top: 254px;
 }
 
 footer .contactsForex {
@@ -948,6 +1173,7 @@ footer .adress p {
 
 footer .logoWrap {
     text-align: center;
+    margin-top: 308px;
 }
 
 footer .logoFooter img,
@@ -957,7 +1183,7 @@ footer a {
 }
 
 .logoFooter {
-    padding-top: 147px;
+    padding-top: 140px;
     position: relative;
 }
 
@@ -1005,18 +1231,35 @@ footer .copyright {
 
 footer .social {
     text-align: right;
+    margin-top: 254px;
 }
 
-footer .menu li {
+footer .menu {
     margin-top: 100px;
+    margin-bottom: 58px;
 }
 
 /*FAQ*/
+.menuSocial li.socialFAQ1 {
+    left: 145px;
+    margin-top: 165px;
+}
+
+.menuSocial li.socialFAQ2 {
+    left: 145px;
+    margin-top: 253px;
+}
+
+.menuSocial li.socialFAQ3 {
+    left: 145px;
+    margin-top: 343px;
+}
 header .backImgFaq {
     width: 1920px;
     height: 517px;
+    left: 50%;
+    margin-left: -960px;
     position: absolute;
-    bottom: -141px;
     z-index: -1;
 }
 
@@ -1047,19 +1290,21 @@ header .faq span {
     float: left;
     width: calc(100% - 800px);
     padding-left: 46px;
+    margin-top: 184px;
 }
 
 .questions {
     float: left;
     width: 800px;
+    margin-top: 148px;
 }
 
 /*.questions span {*/
-    /*padding-left: 173px;*/
+/*padding-left: 173px;*/
 /*}*/
 
 /*.questions p {*/
-    /*padding-left: 146px;*/
+/*padding-left: 146px;*/
 /*}*/
 
 .accordion span {
@@ -1084,17 +1329,17 @@ header .faq span {
 }
 
 .remainQuestions .backImg {
-    width: 601px;
+    width: 583px;
     height: 536px;
     position: absolute;
     top: 0;
-    left: 1317px;
+    right: 0;
     z-index: -1;
 }
 
 .remainQuestions .captionBlue {
-    padding-top: 80px;
-    padding-bottom: 50px;
+    margin-top: 258px;
+    margin-bottom: 70px;
 }
 
 .remainQuestions .table {
@@ -1123,6 +1368,24 @@ header .faq span {
     padding-top: 45px;
 }
 
+.paymentsFAQ {
+    position: relative;
+    z-index: 1;
+}
+
+.paymentsFAQ ul.pay {
+    margin-top: 250px;
+}
+
+.paymentsFAQ .backImg {
+    width: 1920px;
+    height: 291px;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
 .writeUs {
     display: table-cell;
     vertical-align: bottom;
