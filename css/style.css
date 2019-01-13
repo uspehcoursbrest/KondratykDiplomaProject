@@ -43,7 +43,6 @@ header .backImg {
     width: 1920px;
     height: 987px;
     position: absolute;
-    /*bottom: -141px;*/
     top: 0;
     left: 50%;
     margin-left: -960px;
@@ -63,22 +62,21 @@ header .backImg {
     text-transform: uppercase;
     color: #2f7bde;
     position: absolute;
-    display: block;
-    top: 0;
-    left: 192px;
-    margin-top: 510px;
+    display: inline-block;
+    top: 440px;
+    left: 95px;
+    transform: rotate(-90deg);
 }
 
 .menuSocial img {
     height: 50px;
 }
 
-.menuSocial li.social1 {
+.menuSocial span + li {
     position: absolute;
     display: block;
-    top: 0;
     left: 170px;
-    margin-top: 614px;
+    top: 612px;
 }
 
 .menuSocial li.social2 {
@@ -439,7 +437,7 @@ header .statistic .item3 .percent.active {
 
 .calculator {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .calculator .backImg {
@@ -449,7 +447,7 @@ header .statistic .item3 .percent.active {
     top: 122px;
     left: 50%;
     margin-left: -960px;
-    z-index: -1;
+    z-index: -2;
 }
 
 /*.menuCalculator {*/
@@ -524,11 +522,11 @@ header .statistic .item3 .percent.active {
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 130px;
 }
 
 .myTarif {
-    margin-top: 140px;
+    margin-top: 135px;
     /*margin-bottom: 120px;*/
 }
 
@@ -640,13 +638,26 @@ header .statistic .item3 .percent.active {
     float: left;
     width: 50%;
     display: block;
-    text-align: center;
+    padding-left: 272px;
+    position: relative;
 }
-
+.calc .calcDep1 label {
+    padding-left: 90px;
+}
+.calc .calcDep1 .cur {
+    color: #ffffff;
+    position: absolute;
+    top: 58px;
+    padding-left: 275px;
+}
 .calc .calcDep2 {
     float: left;
     width: 50%;
     display: block;
+}
+
+.calc .calcDep2 label {
+    padding-left: 98px;
 }
 
 .calculator .calcDep1 input,
@@ -665,15 +676,6 @@ header .statistic .item3 .percent.active {
     padding-left: 19px;
 }
 
-/*.calculator .calcDep1 input {*/
-/*margin-right: 15px;*/
-/*margin-top: 20px;*/
-/*}*/
-/*.calculator .calcDep2 select {*/
-/*margin-left: 15px;*/
-/*margin-top: 20px;*/
-/*}*/
-
 .calculator .calc label {
     font-size: 15px;
     letter-spacing: 0.05em;
@@ -689,12 +691,6 @@ header .statistic .item3 .percent.active {
     background-color: #0b47ad;
     border-color: #3168cb;
 }
-
-/*.calcReinvest input {*/
-/*display: block;*/
-/*text-align: center;*/
-/*}*/
-
 
 .calculator #plan {
     font-weight: 500;
@@ -749,9 +745,9 @@ header .statistic .item3 .percent.active {
 
 .videoPresentation .backImg {
     width: 1920px;
-    height: 1326px;
+    height: 1380px;
     position: absolute;
-    top: -75px;
+    top: -245px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
@@ -760,28 +756,26 @@ header .statistic .item3 .percent.active {
 .videoPresentation .captionBlue {
     margin-top: 124px;
 }
-
-.videoPresentation .video {
-    margin-top: 105px;
-    width: 1170px;
-    height: 745px;
+.videoPresentation .captionBlue span {
+    text-transform: uppercase;
 }
 
-/*.result {*/
-/*background-repeat: no-repeat;*/
-/*background-position: center;*/
-/*height: 680px;*/
-/*}*/
+.videoPresentation .video {
+    margin-top: 96px;
+    width: 1166px;
+    height: 740px;
+}
+
 .result {
     position: relative;
     z-index: 1;
 }
 
 .result .backImg {
-    width: 2026px;
+    width: 1920px;
     height: 682px;
     position: absolute;
-    top: -75px;
+    top: 143px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
@@ -828,21 +822,29 @@ header .statistic .item3 .percent.active {
 .result [class*="item"] img {
     width: 42px;
     height: 36px;
-    position: absolute;
 }
 
 .result .topResult [class*="item"] img {
+    position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -21px;
 }
-
+.result .downResult [class*="item"] {
+    position: relative;
+}
+.result .downResult [class*="item"] img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -21px;
+}
 .result div[class*="item"] span:nth-child(2) {
     font-weight: bold;
     font-size: 45px;
-    line-height: 20.78px;
     color: #0349c6;
-    padding-top: 87px;
+    padding-top: 82px;
+    background-color: #ffffff;
 }
 
 .result div[class*="item4"] span:nth-child(2) {
@@ -859,15 +861,9 @@ header .statistic .item3 .percent.active {
     font-size: 25px;
     line-height: 34.63px;
     color: #061046;
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
-/*.lastDeposit {*/
-/*background-repeat: no-repeat;*/
-/*background-position: center;*/
-/*-webkit-background-size: cover;*/
-/*background-size: cover;*/
-/*}*/
 .lastDeposit {
     position: relative;
     z-index: 1;
@@ -877,7 +873,7 @@ header .statistic .item3 .percent.active {
     width: 1920px;
     height: 1380px;
     position: absolute;
-    top: -75px;
+    top: -230px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
@@ -893,21 +889,23 @@ header .statistic .item3 .percent.active {
     float: left;
     display: table;
     margin-top: 95px;
-    padding-right: 78px;
     position: relative;
 }
-
-.lastDeposit .lastDepWith img {
-    height: 32px;
-    width: 36px;
-    /*display: table-cell;*/
+.lastDeposit .table2 {
+    padding-left: 37px;
 }
 
-/*.lastDeposit .lastDepWith li:first-child img {*/
-/*position: absolute;*/
-/*top: 0%;*/
-/*left: 100%;*/
-/*}*/
+.lastDeposit .lastDepWith li img {
+    height: 32px;
+    width: 36px;
+    display: table-cell;
+    text-align: center;
+    margin-left: 42px;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-top: 8px;
+}
+
 .lastDeposit .lastDepWith li {
     display: table-row;
 }
@@ -919,6 +917,7 @@ header .statistic .item3 .percent.active {
     letter-spacing: 0.025em;
     color: #061046;
     display: table-cell;
+    vertical-align: middle;
 }
 
 .lastDeposit .lastDepWith li span:nth-child(2) {
@@ -928,6 +927,7 @@ header .statistic .item3 .percent.active {
     color: #91a8ce;
     display: table-cell;
     padding-left: 50px;
+    vertical-align: middle;
 }
 
 .lastDeposit .lastDepWith li span:nth-child(3) {
@@ -938,6 +938,7 @@ header .statistic .item3 .percent.active {
     color: #4194ff;
     display: table-cell;
     padding-left: 56px;
+    vertical-align: middle;
 }
 
 .lastDeposit .lastDepWith li span.active {
@@ -949,11 +950,6 @@ header .statistic .item3 .percent.active {
     margin-left: 502px;
 }
 
-/*.investNow {*/
-/*background-repeat: no-repeat;*/
-/*background-position: center;*/
-/*height: 775px;*/
-/*}*/
 .investNow {
     position: relative;
     z-index: 1;
@@ -963,7 +959,7 @@ header .statistic .item3 .percent.active {
     width: 1920px;
     height: 775px;
     position: absolute;
-    top: -70px;
+    top: -160px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
@@ -1053,11 +1049,12 @@ header .statistic .item3 .percent.active {
 }
 
 .lastNews .backImg {
-    width: 1963px;
+    width: 1898px;
     height: 903px;
     position: absolute;
+    top: -200px;
     left: 50%;
-    margin-left: -982px;
+    margin-left: -949px;
     z-index: -1;
 }
 
@@ -1105,37 +1102,45 @@ header .statistic .item3 .percent.active {
     margin-top: 58px;
 }
 
-/*.payments {*/
-/*background-repeat: no-repeat;*/
-/*background-position: center;*/
-/*height: 290px;*/
-/*}*/
+
 .payments {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
-.payments ul.pay {
-    margin-top: 216px;
+.payments .container img {
+    margin-top: 180px;
 }
 
 .payments .backImg {
     width: 1920px;
     height: 291px;
     position: absolute;
-    bottom: -70px;
+    top: 62px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -2;
+}
+
+/*footer {*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*-webkit-background-size: cover;*/
+    /*background-size: cover;*/
+/*}*/
+footer {
+    position: relative;
+    z-index: 1;
+}
+footer .backImg {
+    width: 1920px;
+    height: 573px;
+    position: absolute;
+    top: 50px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
 }
-
-footer {
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
 .table {
     display: table;
     width: 100%;
@@ -1149,12 +1154,9 @@ footer .contactsFooter,
 footer .logoWrap,
 footer .social {
     width: 33.3333%;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
-footer .contactsFooter {
-    margin-top: 254px;
-}
 
 footer .contactsForex {
     font-size: 16px;
@@ -1173,7 +1175,7 @@ footer .adress p {
 
 footer .logoWrap {
     text-align: center;
-    margin-top: 308px;
+
 }
 
 footer .logoFooter img,
@@ -1185,6 +1187,7 @@ footer a {
 .logoFooter {
     padding-top: 140px;
     position: relative;
+    margin-top: 130px;
 }
 
 .logoFooter img {
@@ -1231,7 +1234,6 @@ footer .copyright {
 
 footer .social {
     text-align: right;
-    margin-top: 254px;
 }
 
 footer .menu {
@@ -1241,6 +1243,9 @@ footer .menu {
 
 /*FAQ*/
 .menuSocial li.socialFAQ1 {
+    position: absolute;
+    display: block;
+    top: 0;
     left: 145px;
     margin-top: 165px;
 }
@@ -1251,8 +1256,13 @@ footer .menu {
 }
 
 .menuSocial li.socialFAQ3 {
+
     left: 145px;
     margin-top: 343px;
+}
+header {
+    position: relative;
+    z-index: 3;
 }
 header .backImgFaq {
     width: 1920px;
@@ -1260,7 +1270,7 @@ header .backImgFaq {
     left: 50%;
     margin-left: -960px;
     position: absolute;
-    z-index: -1;
+    z-index: -3;
 }
 
 header .faq span {
@@ -1269,11 +1279,13 @@ header .faq span {
     font-size: 90px;
     line-height: 83.73px;
     color: #ffffff;
+    display: block;
+    margin-top: 100px;
 }
 
 .askQuestions {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .askQuestions .backImg {
@@ -1283,7 +1295,7 @@ header .faq span {
     top: -141px;
     left: 50%;
     margin-left: -960px;
-    z-index: -1;
+    z-index: -2;
 }
 
 .menuQuestions {
@@ -1332,13 +1344,13 @@ header .faq span {
     width: 583px;
     height: 536px;
     position: absolute;
-    top: 0;
+    top: -123px;
     right: 0;
     z-index: -1;
 }
 
 .remainQuestions .captionBlue {
-    margin-top: 258px;
+    margin-top: 236px;
     margin-bottom: 70px;
 }
 
@@ -1370,10 +1382,10 @@ header .faq span {
 
 .paymentsFAQ {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
-.paymentsFAQ ul.pay {
+.paymentsFAQ img {
     margin-top: 250px;
 }
 
@@ -1381,11 +1393,12 @@ header .faq span {
     width: 1920px;
     height: 291px;
     position: absolute;
-    bottom: -70px;
+    top: 133px;
     left: 50%;
     margin-left: -960px;
-    z-index: -1;
+    z-index: -2;
 }
+
 .writeUs {
     display: table-cell;
     vertical-align: bottom;
