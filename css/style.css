@@ -33,7 +33,22 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+.invisLink > a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
 header {
     position: relative;
     z-index: 2;
@@ -317,6 +332,7 @@ header .statistic [class*="item"] img {
     left: 0;
     top: 50%;
     margin-top: -28px;
+   box-shadow: 21px 21px 21px 0px rgba(136,163,221,0.33);
 }
 
 header .statistic span {
@@ -666,6 +682,8 @@ header .statistic .item3 .percent.active {
     height: 55px;
     display: block;
     margin-top: 22px;
+    border: 1px solid #3168cb;
+    box-shadow: inset 0px 2px 3px 0px rgba(0,29,83,0.32);
 }
 
 .calculator .calcDep1 input {
@@ -689,7 +707,6 @@ header .statistic .item3 .percent.active {
 .calculator .calc select,
 .calcReinvest input {
     background-color: #0b47ad;
-    border-color: #3168cb;
 }
 
 .calculator #plan {
@@ -764,6 +781,8 @@ header .statistic .item3 .percent.active {
     margin-top: 96px;
     width: 1166px;
     height: 740px;
+    box-shadow: 21px 21px 21px 0px rgba(136,163,221,0.33);
+    border: 12px solid #ffffff;
 }
 
 .result {
