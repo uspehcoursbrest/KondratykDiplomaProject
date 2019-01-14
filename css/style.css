@@ -147,12 +147,26 @@ header .backImg {
 
 .clock {
     float: left;
-    width: 330px;
+    width: 293px;
     margin-left: 310px;
     margin-top: 50px;
     line-height: 50px;
+    background-color: #2f7bde;
+    position: relative;
 }
-
+.clock::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 16px solid #2f7bde;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
+    position: absolute;
+    top: 37%;
+    left: 92.8%;
+    transform: rotate(-90deg);
+}
 header .clock .icon-clock {
     font-size: 21px;
     color: #ffffff;
@@ -202,19 +216,48 @@ header .dateClock span:last-child {
 
 .logReg {
     float: left;
-    width: 270px;
-    margin-left: 34px;
+    width: 239px;
+    margin-left: 66px;
     margin-top: 50px;
     line-height: 50px;
+    background-color: rgb(1,46,127);
+    position: relative;
 }
-
+.logReg::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 16px solid rgb(1,46,127);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    position: absolute;
+    top: 34.5%;
+    left: 92.8%;
+    transform: rotate(-90deg);
+}
+.logReg::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 16px solid rgb(1,46,127);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    position: absolute;
+    top: 18px;
+    left: -32.7px;
+    transform: rotate(90deg);
+}
 .logReg .login {
     display: inline-block;
 }
-
+.logReg .login span {
+    padding-left: 13px;
+}
 .logReg .register {
     display: inline-block;
-    margin-left: 36px;
+    margin-left: 28px;
 }
 
 header .logReg a {
@@ -223,9 +266,11 @@ header .logReg a {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
-    margin-left: 13px;
+    padding-left: 13px;
 }
-
+header .register a {
+    padding-right: 13px;
+}
 header .logReg span.icon-login,
 header .logReg span.icon-register {
     color: #89b4f4;
@@ -258,8 +303,24 @@ header .menu li {
 
 .menu li.active a {
     color: #f12f77;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 22px;
 }
-
+.menu li.active a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #f12f77;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -5px;
+    transform: rotate(180deg);
+}
 header .betnvest {
     margin-top: 110px;
     line-height: 1;
