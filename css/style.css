@@ -177,9 +177,12 @@ header .clock .icon-clock {
     color: #ffffff;
     position: absolute;
     display: block;
-    top: 14px;
+    top: 0;
     left: 0;
     background-color: #1d5cb8;
+    line-height: 50px;
+    width: 31px;
+    text-align: center;
 }
 .time {
     position: relative;
@@ -1288,7 +1291,9 @@ header .statistic .item3 .percent.active {
     color: #012c7a;
     display: block;
 }
-
+.lastNews .itemNews .icon-calendar {
+    color: #e75995;
+}
 .lastNews .itemNews a {
     margin-top: 58px;
 }
