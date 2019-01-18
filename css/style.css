@@ -184,21 +184,35 @@ header .clock .icon-clock {
     width: 31px;
     text-align: center;
 }
+
 .time {
     position: relative;
 }
+
 .time::before {
     content: '';
     display: block;
     width: 0;
     height: 0;
-    border-top: 15px solid #1d5cb8;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-right: 15px solid #1d5cb8;
+    border-bottom: 25px solid transparent;
     position: absolute;
-    top: 37.5%;
-    left: -14.4%;
-    transform: rotate(90deg);
+    top: 0;
+    left: -15px;
+}
+
+.time::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 15px solid #1d5cb8;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 30px;
 }
 
 header .clock .time {
@@ -298,9 +312,11 @@ header .logReg a {
     color: #ffffff;
     padding-left: 13px;
 }
+
 header .logReg a:hover {
     opacity: 0.7;
 }
+
 header .register a {
     padding-right: 13px;
 }
@@ -334,9 +350,11 @@ header .menu li {
     text-transform: uppercase;
     color: #ffffff;
 }
+
 .menu a:hover {
     opacity: 0.7;
 }
+
 .menu li.active a {
     color: #f12f77;
     position: relative;
@@ -400,33 +418,78 @@ header .betnvest p {
     background-color: #e0186c;
     padding: 26px 87px 26px 32px;
     display: inline-block;
-    margin-top: 82px;
-    margin-left: 22px;
     position: relative;
 }
+
+.betnvest .btnFillColor2 {
+    margin-top: 82px;
+    margin-left: 22px;
+}
+
 .btnFillColor2:hover {
     filter: drop-shadow(21px 21px 21px rgba(136, 163, 221, 0.33));
 }
+
 .btnFillColor1:hover {
     filter: drop-shadow(21px 21px 21px rgba(136, 163, 221, 0.33));
 }
+
 .btnFillColor2::before {
     content: '';
     display: block;
     width: 0;
     height: 0;
-    border-top: 20px solid #e0186c;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
+    border-top: 34px solid transparent;
+    border-right: 20px solid #e0186c;
+    border-bottom: 34px solid transparent;
     position: absolute;
-    top: 24px;
-    left: -43.7px;
-    transform: rotate(90deg);
+    top: 0;
+    left: -20px;
 }
+
+.btnFillColor2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 34px solid transparent;
+    border-left: 20px solid #e43981;
+    border-bottom: 34px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.btnFillColor2 .icon-pointer-right {
+    font-size: 15px;
+    position: absolute;
+    left: 193px;
+    top: 0;
+    display: block;
+    width: 37px;
+    line-height: 67px;
+    background-color: #e43981;
+    text-align: center;
+}
+
 .betnvest .btnFillColor2 .icon-pointer-right {
     font-size: 15px;
     position: absolute;
-    left: 88%;
+    left: 193px;
+    top: 0;
+}
+
+.btnFillColor2 .icon-pointer-right::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 34px solid transparent;
+    border-right: 20px solid #e43981;
+    border-bottom: 34px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -20px;
 }
 
 header .statistic {
@@ -509,7 +572,7 @@ header .statistic .item3 .percent.active {
 }
 
 .about .menuAbout {
-    width: calc(100% - 791px);
+    width: calc(100% - 745px);
     float: left;
     margin-top: 150px;
 }
@@ -526,14 +589,17 @@ header .statistic .item3 .percent.active {
     display: inline-block;
     margin-left: 44px;
 }
+
 .menuAbout li a:hover,
 .menuQuestions li a:hover {
     opacity: 0.7;
 }
+
 .menuAbout li a:active,
 .menuQuestions li a:active {
     color: #e0186c;
 }
+
 .menuAbout li:nth-child(2),
 .menuQuestions li:nth-child(2) {
     padding-top: 46px;
@@ -543,18 +609,21 @@ header .statistic .item3 .percent.active {
 .menuQuestions li:nth-child(3) {
     padding-top: 84px;
 }
+
 .menuAbout li.active a,
 .menuQuestions li.active a {
     color: #e0186c;
     line-height: 101px;
 }
+
 .menuAbout li.active {
     width: 287px;
     background-color: #ffffff;
     border-left: 4px solid #e0186c;
-    filter: drop-shadow(21px 21px 21px rgba(136,163,221,0.33));
+    filter: drop-shadow(21px 21px 21px rgba(136, 163, 221, 0.33));
     position: relative;
 }
+
 .menuAbout .active:before {
     content: '';
     display: block;
@@ -568,18 +637,49 @@ header .statistic .item3 .percent.active {
     left: 249px;
     transform: rotate(-90deg);
 }
+
 .btnFillColor1 {
     font-family: "Monda";
     font-size: 16px;
     font-weight: bold;
-    /*line-height: 83.73px;*/
     letter-spacing: 0.025em;
     text-decoration: none;
     color: #ffffff;
     background: #2f7bde;
-    padding: 20px;
+    padding: 13px 24px;
     display: inline-block;
-    margin-top: 156px;
+    position: relative;
+
+}
+
+.btnFillColor1::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 26px solid transparent;
+    border-right: 16px solid #2f7bde;
+    border-bottom: 26px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -16px;
+}
+.btnFillColor1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 26px solid transparent;
+    border-left: 16px solid #2f7bde;
+    border-bottom: 26px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.menuAbout .btnFillColor1 {
+    margin-left: 40px;
+    margin-top: 150px;
 }
 
 .about .description {
@@ -617,7 +717,7 @@ header .statistic .item3 .percent.active {
     width: 1920px;
     height: 1122px;
     position: absolute;
-    top: 122px;
+    top: 112px;
     left: 50%;
     margin-left: -960px;
     z-index: -2;
@@ -630,39 +730,63 @@ header .statistic .item3 .percent.active {
     display: inline-block;
     /*padding-left: 100px;*/
     position: relative;
-    margin-top: 163px;
+    margin-top: 147px;
 }
 
 .menuCalculator .classicPlan {
-    margin-left: 50px;
+    margin-left: -25px;
     margin-right: 166px;
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    height: 177px;
+    padding-left: 35px;
+    z-index: inherit;
 }
-
+.menuCalculator .classicPlan::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 321px;
+    height: 0px;
+    top: -30px;
+    left: 50%;
+    margin-left: -212px;
+    border-bottom: 177px solid white;
+    border-left: 101px solid transparent;
+    border-right: 101px solid transparent;
+    z-index: -3;
+}
 .menuCalculator .royalPlan {
     margin-right: 166px;
 }
 
 .menuCalculator [class*="icon"] {
-    font-size: 70px;
+    font-size: 100px;
     position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -35px;
+    left: -20px;
+    /*top: 50%;*/
+    /*margin-top: -35px;*/
 }
 
 .menuCalculator .plans {
     padding-left: 100px;
 }
-
-.menuCalculator .plans span {
-    display: block;
-}
+/*.plans .sup {*/
+    /*font-size: 18px;*/
+    /*line-height: 1;*/
+    /*vertical-align: top;*/
+/*}*/
+/*.menuCalculator .plans span {*/
+    /*display: block;*/
+/*}*/
 
 .menuCalculator .plans span:nth-child(1) {
     font-family: "Monda";
     font-size: 20px;
     font-weight: bold;
     color: #0349c6;
+    display: block;
 }
 
 .menuCalculator .plans span:nth-child(2) {
@@ -672,6 +796,8 @@ header .statistic .item3 .percent.active {
     line-height: 40px;
     letter-spacing: -0.05em;
     color: #e0186c;
+    /*display: block;*/
+    margin-top: 3px;
 }
 
 .menuCalculator .plans span:nth-child(3) {
@@ -681,6 +807,7 @@ header .statistic .item3 .percent.active {
     letter-spacing: 0.25em;
     text-transform: uppercase;
     color: #e0186c;
+    display: block;
 }
 
 .calculator .menuCalculator span.whitePlan {
@@ -695,12 +822,11 @@ header .statistic .item3 .percent.active {
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 63px;
 }
 
 .myTarif {
-    margin-top: 135px;
-    /*margin-bottom: 120px;*/
+    margin-top: 123px;
 }
 
 .myTarif .condition,
@@ -804,7 +930,7 @@ header .statistic .item3 .percent.active {
 }
 
 .calc {
-    margin-top: 132px;
+    margin-top: 110px;
 }
 
 .calc .calcDep1 {
@@ -830,6 +956,7 @@ header .statistic .item3 .percent.active {
     float: left;
     width: 50%;
     display: block;
+    padding-left: 16px;
 }
 
 .calc .calcDep2 label {
@@ -845,10 +972,12 @@ header .statistic .item3 .percent.active {
     border: 1px solid #3168cb;
     box-shadow: inset 0px 2px 3px 0px rgba(0, 29, 83, 0.32);
 }
+
 .calculator .calcDep1 input:focus,
 .calculator .calcDep2 select:focus {
     background-color: #012c7a;;
 }
+
 .calculator .calcDep1 input {
     font-size: 17px;
     font-weight: 500;
@@ -895,7 +1024,7 @@ header .statistic .item3 .percent.active {
     font-size: 15px;
     text-transform: uppercase;
     color: #96c2ff;
-    margin-top: 41px;
+    margin-top: 64px;
 }
 
 .calculator .resOut span:last-child {
@@ -906,7 +1035,7 @@ header .statistic .item3 .percent.active {
 }
 
 .calculator .btnFillColor2 {
-    display: inline-block;
+    /*display: inline-block;*/
     margin-top: 59px;
     margin-left: 452px;
 }
@@ -934,7 +1063,7 @@ header .statistic .item3 .percent.active {
 }
 
 .videoPresentation .captionBlue {
-    margin-top: 124px;
+    margin-top: 90px;
 }
 
 .videoPresentation .captionBlue span {
@@ -949,6 +1078,7 @@ header .statistic .item3 .percent.active {
     border: 12px solid #ffffff;
     position: relative;
 }
+
 .videoPresentation .video iframe {
     position: absolute;
     width: 100%;
@@ -956,6 +1086,7 @@ header .statistic .item3 .percent.active {
     top: 0;
     left: 0;
 }
+
 .result {
     position: relative;
     z-index: 1;
@@ -973,36 +1104,39 @@ header .statistic .item3 .percent.active {
 
 .result .topResult [class*="item"] {
     display: inline-block;
-    margin-top: 290px;
+    margin-top: 329px;
     position: relative;
     width: 270px;
 }
 
 .result .item1 {
-    margin-left: 65px;
+    margin-left: 32px;
 }
 
 .result .item2 {
-    margin-left: 130px;
+    margin-left: 10px;
 }
 
 .result .item3 {
-    margin-left: 139px;
+    margin-left: 12px;
 }
 
 .result .downResult [class*="item"] {
     display: inline-block;
-    margin-top: 36px;
+    margin-top: 78px;
 }
 
 .result .item4 {
-    margin-left: 646px;
+    margin-left: 632px;
 }
 
 .result .item5 {
-    margin-left: 86px;
+    margin-left: 70px;
 }
-
+.result .downResult .item4 .total,
+.result .downResult .item5 .total {
+    margin-left: 0;
+}
 .result [class*="item"] img,
 .result [class*="item"] span {
     display: block;
@@ -1016,9 +1150,9 @@ header .statistic .item3 .percent.active {
 
 .result .topResult [class*="item"] img {
     position: absolute;
-    top: 0;
+    top: -50px;
     left: 50%;
-    margin-left: -21px;
+    margin-left: -46px;
 }
 
 .result .downResult [class*="item"] {
@@ -1027,17 +1161,44 @@ header .statistic .item3 .percent.active {
 
 .result .downResult [class*="item"] img {
     position: absolute;
-    top: 0;
+    top: -50px;
     left: 50%;
-    margin-left: -21px;
+    margin-left: -19px;
 }
 
 .result div[class*="item"] span:nth-child(2) {
     font-weight: bold;
     font-size: 45px;
     color: #0349c6;
-    padding-top: 82px;
+    line-height: 100px;
+    width: 213px;
     background-color: #ffffff;
+    position: relative;
+    filter: drop-shadow(21px 21px 21px rgba(136, 163, 221, 0.33));
+}
+.result div[class*="item"] span:nth-child(2):before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 32px solid #ffffff;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    left: -32px;
+}
+.result div[class*="item"] span:nth-child(2):after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 32px solid #ffffff;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 100%;
 }
 
 .result div[class*="item4"] span:nth-child(2) {
@@ -1054,7 +1215,8 @@ header .statistic .item3 .percent.active {
     font-size: 25px;
     line-height: 34.63px;
     color: #061046;
-    margin-top: 55px;
+    margin-top: 26px;
+    margin-left: -57px;
 }
 
 .lastDeposit {
@@ -1073,7 +1235,7 @@ header .statistic .item3 .percent.active {
 }
 
 .lastDeposit h2 {
-    margin-top: 200px;
+    margin-top: 190px;
     line-height: 1;
 }
 
@@ -1081,7 +1243,7 @@ header .statistic .item3 .percent.active {
     width: 50%;
     float: left;
     display: table;
-    margin-top: 95px;
+    margin-top: 84px;
     position: relative;
 }
 
@@ -1140,8 +1302,8 @@ header .statistic .item3 .percent.active {
 }
 
 .lastDeposit .btnFillColor1 {
-    margin-top: 108px;
-    margin-left: 502px;
+    margin-top: 90px;
+    margin-left: 523px;
 }
 
 .investNow {
@@ -1153,7 +1315,7 @@ header .statistic .item3 .percent.active {
     width: 1920px;
     height: 775px;
     position: absolute;
-    top: -160px;
+    top: -177px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
@@ -1161,7 +1323,7 @@ header .statistic .item3 .percent.active {
 }
 
 .investNow .rate h2 {
-    margin-top: 150px;
+    margin-top: 142px;
 }
 
 .investNow .rate p {
@@ -1172,6 +1334,8 @@ header .statistic .item3 .percent.active {
     color: #ffffff;
     text-align: center;
     padding-top: 60px;
+    width: 746px;
+    margin-left: 215px;
 }
 
 .investNow .textInvest1,
@@ -1179,6 +1343,9 @@ header .statistic .item3 .percent.active {
     /*width: 50%;*/
     float: left;
     margin-top: 140px;
+    height: 84px;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .investNow .textInvest1 p,
@@ -1211,8 +1378,8 @@ header .statistic .item3 .percent.active {
 
 .investNow .textInvest1 span {
     position: absolute;
-    top: -11px;
-    right: 0;
+    top: -53px;
+    right: -11px;
 }
 
 .investNow .textInvest2 {
@@ -1228,13 +1395,13 @@ header .statistic .item3 .percent.active {
 
 .investNow .textInvest2 span {
     position: absolute;
-    top: -11px;
-    left: 0px;
+    top: -53px;
+    left: -13px;
 }
 
 .investNow .btnFillColor2 {
-    margin-top: 177px;
-    margin-left: 451px;
+    margin-top: 172px;
+    margin-left: 470px;
 }
 
 .lastNews {
@@ -1260,11 +1427,11 @@ header .statistic .item3 .percent.active {
 
 .lastNews .itemNews {
     width: 333px;
-    margin-top: 112px;
+    margin-top: 101px;
 }
 
 .lastNews h3 {
-    margin-top: 80px;
+    margin-top: 61px;
 }
 
 .lastNews .itemNews span:first-child {
@@ -1291,9 +1458,11 @@ header .statistic .item3 .percent.active {
     color: #012c7a;
     display: block;
 }
+
 .lastNews .itemNews .icon-calendar {
     color: #e75995;
 }
+
 .lastNews .itemNews a {
     margin-top: 58px;
 }
@@ -1305,7 +1474,7 @@ header .statistic .item3 .percent.active {
 }
 
 .payments .container img {
-    margin-top: 180px;
+    margin-top: 193px;
 }
 
 .payments .backImg {
@@ -1333,7 +1502,7 @@ footer .backImg {
     width: 1920px;
     height: 573px;
     position: absolute;
-    top: 50px;
+    top: 34px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
@@ -1354,6 +1523,7 @@ footer .social {
     width: 33.3333%;
     vertical-align: bottom;
 }
+
 footer .contactsFooter a:hover,
 footer .social a:hover {
     opacity: 0.7;
@@ -1388,7 +1558,7 @@ footer a {
 .logoFooter {
     padding-top: 140px;
     position: relative;
-    margin-top: 130px;
+    margin-top: 148px;
 }
 
 .logoFooter img {
@@ -1438,8 +1608,7 @@ footer .social {
 }
 
 footer .menu {
-    margin-top: 100px;
-    margin-bottom: 58px;
+    margin-top: 130px;
 }
 
 /*FAQ*/
@@ -1483,7 +1652,7 @@ header .faq span {
     line-height: 83.73px;
     color: #ffffff;
     display: block;
-    margin-top: 100px;
+    margin-top: 58px;
 }
 
 .askQuestions {
