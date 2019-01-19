@@ -81,7 +81,7 @@ header .backImg {
     position: absolute;
     display: inline-block;
     top: 440px;
-    left: 95px;
+    left: 63px;
     transform: rotate(-90deg);
 }
 
@@ -92,7 +92,7 @@ header .backImg {
 .menuSocial span + li {
     position: absolute;
     display: block;
-    left: 170px;
+    left: 140px;
     top: 612px;
 }
 
@@ -100,7 +100,7 @@ header .backImg {
     position: absolute;
     display: block;
     top: 0;
-    left: 170px;
+    left: 140px;
     margin-top: 704px;
 }
 
@@ -108,7 +108,7 @@ header .backImg {
     position: absolute;
     display: block;
     top: 0;
-    left: 170px;
+    left: 140px;
     margin-top: 794px;
 }
 
@@ -416,11 +416,15 @@ header .betnvest p {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #e0186c;
-    padding: 26px 87px 26px 32px;
+    width: 229px;
+    line-height: 68px;
+    /*text-align: center;*/
     display: inline-block;
     position: relative;
 }
-
+.btnFillColor2 a {
+    padding-left: 32px;
+}
 .betnvest .btnFillColor2 {
     margin-top: 82px;
     margin-left: 22px;
