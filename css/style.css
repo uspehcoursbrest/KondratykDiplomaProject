@@ -623,7 +623,8 @@ header .statistic .item3 .percent.active {
     line-height: 101px;
 }
 
-.menuAbout li.active {
+.menuAbout li.active,
+.menuQuestions li.active {
     width: 287px;
     background-color: #ffffff;
     border-left: 4px solid #e0186c;
@@ -631,7 +632,8 @@ header .statistic .item3 .percent.active {
     position: relative;
 }
 
-.menuAbout .active:before {
+.menuAbout .active:before,
+.menuQuestions .active:before{
     content: '';
     display: block;
     width: 0;
@@ -1259,7 +1261,7 @@ header .statistic .item3 .percent.active {
     width: 1920px;
     height: 1380px;
     position: absolute;
-    top: -235px;
+    top: -185px;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
@@ -1287,10 +1289,10 @@ header .statistic .item3 .percent.active {
     width: 36px;
     display: table-cell;
     text-align: center;
-    margin-left: 42px;
+    margin-left: 41px;
     vertical-align: middle;
     line-height: 50px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .lastDeposit .lastDepWith li {
@@ -1317,7 +1319,7 @@ header .statistic .item3 .percent.active {
     vertical-align: middle;
 }
 
-.lastDeposit .lastDepWith li span:nth-child(3) {
+.lastDeposit .lastDepWith li span:nth-child(4) {
     font-weight: bold;
     font-size: 16px;
     line-height: 50px;
@@ -1327,11 +1329,37 @@ header .statistic .item3 .percent.active {
     padding-left: 56px;
     vertical-align: middle;
 }
-
-.lastDeposit .lastDepWith li span.active {
-    color: #de1c6e;
+.lastDeposit .lastDepWith li span.sum {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    color: #4194ff;
+    display: table-cell;
+    padding-left: 56px;
+    vertical-align: middle;
+}
+.lastDeposit .lastDepWith li span.icon-triangle-up {
+    font-size: 11px;
+    color: #4194ff;
+    display: inline-block;
+    padding-right: 12px;
 }
 
+.lastDeposit .lastDepWith li span.activeSum {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    display: table-cell;
+    padding-left: 56px;
+    vertical-align: middle;
+    color: #de1c6e;
+}
+.lastDeposit .lastDepWith li span.icon-triangle-down {
+    font-size: 11px;
+    color: #de1c6e;
+    display: inline-block;
+    padding-right: 10px;
+}
 .lastDeposit .btnFillColor1 {
     margin-top: 90px;
     margin-left: 523px;
@@ -1409,10 +1437,12 @@ header .statistic .item3 .percent.active {
 
 .investNow .textInvest1 span {
     position: absolute;
-    top: -53px;
-    right: -11px;
+    top: -12px;
+    right: 0;
 }
-
+.investNow sup {
+    font-size: 60px;
+}
 .investNow .textInvest2 {
     width: 464px;
     padding-left: 190px;
@@ -1426,8 +1456,8 @@ header .statistic .item3 .percent.active {
 
 .investNow .textInvest2 span {
     position: absolute;
-    top: -53px;
-    left: -13px;
+    top: -12px;
+    left: -3px;
 }
 
 .investNow .btnFillColor2 {
@@ -1710,9 +1740,9 @@ header .faq span {
 
 .askQuestions .backImg {
     width: 1920px;
-    height: 1427px;
+    height: 1640px;
     position: absolute;
-    top: -141px;
+    top: -304px;
     left: 50%;
     margin-left: -960px;
     z-index: -2;
@@ -1721,43 +1751,71 @@ header .faq span {
 .menuQuestions {
     float: left;
     width: calc(100% - 800px);
-    padding-left: 46px;
-    margin-top: 184px;
+    margin-top: 163px;
+}
+.menuQuestions li:nth-child(4),
+.menuQuestions li:nth-child(5) {
+    padding-top: 84px;
 }
 
 .questions {
     float: left;
     width: 800px;
-    margin-top: 148px;
+    margin-top: 155px;
 }
-
-/*.questions span {*/
-/*padding-left: 173px;*/
-/*}*/
-
-/*.questions p {*/
-/*padding-left: 146px;*/
-/*}*/
-
-.accordion span {
+.questions span.icon-triangle-down {
+    font-size: 14px;
+    color: #4194ff;
+    position: absolute;
+    display: block;
+    left: 764px;
+    top: 21px;
+}
+.questions span.icon-triangle-up {
+    font-size: 14px;
+    color: #e0186c;
+    position: absolute;
+    display: block;
+    left: 761px;
+    top: 21px;
+}
+.accordion span.que {
     font-family: "Monda";
     font-weight: bold;
     font-size: 20px;
-    line-height: 70px;
+    line-height: 53px;
     color: #012c7a;
+    background-color: #ffffff;
+    display: inline-block;
+    width: 800px;
+    padding-left: 32px;
+    position: relative;
+    box-shadow: 21px 21px 21px rgba(136, 163, 221, 0.33);
 }
-
+.question {
+    padding-top: 18px;
+}
 .accordion p {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #012c7a;
 }
-
+.questions .active p {
+    padding-top: 33px;
+    padding-left: 4px;
+}
+.accordion span.activeTex {
+    border-left: 4px solid #e0186c;
+    color: #e0186c;
+}
+.active + .accordion {
+    padding-top: 40px;
+}
 .remainQuestions {
     position: relative;
     z-index: 1;
-    margin-top: 256px;
+    margin-top: 210px;
 }
 
 .remainQuestions .backImg {
@@ -1769,20 +1827,21 @@ header .faq span {
     z-index: -1;
 }
 
-.remainQuestions .captionBlue {
-    margin-top: 236px;
-    margin-bottom: 70px;
-}
 
 .remainQuestions .table {
     display: table;
     width: 100%;
     vertical-align: bottom;
 }
-
+.remainQuestions a {
+    display: inline-block;
+    text-align: left;
+    padding-left: 45px;
+}
 .remained {
     display: table-cell;
     width: 720px;
+    padding-top: 57px;
 }
 
 .remained span {
@@ -1790,6 +1849,7 @@ header .faq span {
     font-size: 20px;
     line-height: 30px;
     color: #012c7a;
+    letter-spacing: 0.025em;
 }
 
 .remained p {
@@ -1797,7 +1857,7 @@ header .faq span {
     line-height: 30px;
     letter-spacing: 0.025em;
     color: #012c7a;
-    padding-top: 45px;
+    padding-top: 30px;
 }
 
 .paymentsFAQ {
@@ -1806,14 +1866,14 @@ header .faq span {
 }
 
 .paymentsFAQ img {
-    margin-top: 250px;
+    margin-top: 235px;
 }
 
 .paymentsFAQ .backImg {
     width: 1920px;
     height: 291px;
     position: absolute;
-    top: 133px;
+    top: 145px;
     left: 50%;
     margin-left: -960px;
     z-index: -2;
