@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class="bodyWrap">
@@ -36,12 +38,12 @@
                     </div>
                     <div class="clock clear">
                         <div class="time">
-                                <span class="icon-clock"></span>
-                                <span>20 : 47 : 18</span>
+                            <span class="icon-clock"></span>
+                            <span class="time2" id="time2">20 : 47 : 18</span>
                         </div>
                         <div class="dateClock">
-                            <span>05/09</span>
-                            <span>2018</span>
+                            <span class="date" id="date">05/09</span>
+                            <span class="date" id="year">2018</span>
                         </div>
                     </div>
                     <div class="logReg">
@@ -253,7 +255,9 @@
             <div class="container">
                 <h2 class="captionBlue"><span>i-forex</span> Group Limited Video</h2>
                 <div class="video">
-                    <iframe src="https://www.youtube.com/embed/mEphk2CyiU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/mEphk2CyiU0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -301,43 +305,53 @@
                     <div class="lastDepWith table1">
                         <ul>
                             <li>
-                                <span>kacemtrans</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>kacemtrans</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_01.png" alt="">
                             </li>
                             <li>
-                                <span>alexcandr</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>alexcandr</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_01.png" alt="">
                             </li>
                             <li>
-                                <span>atzf2e00d</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>atzf2e00d</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_02.png" alt="">
                             </li>
                             <li>
-                                <span>draghetto</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>draghetto</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_03.png" alt="">
                             </li>
                             <li>
-                                <span>TheDude</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>TheDude</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_02.png" alt="">
                             </li>
                             <li>
-                                <span>kacemtrans</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>kacemtrans</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_02.png" alt="">
                             </li>
                             <li>
-                                <span>alexcandr</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>alexcandr</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_02.png" alt="">
                             </li>
                             <li>
-                                <span>atzf2e00d</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>atzf2e00d</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_04.png" alt="">
                             </li>
                             <li>
-                                <span>draghetto</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>draghetto</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_04.png" alt="">
                             </li>
                             <li>
-                                <span>TheDude</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span class="icon-triangle-up"></span>15.32 USD</span><img
+                                <span>TheDude</span><span>Sep-05-2018 03:45:38 PM</span><span class="sum"><span
+                                    class="icon-triangle-up"></span>15.32 USD</span><img
                                     src="img/png/lastDep_05.png" alt="">
                             </li>
                         </ul>
@@ -345,42 +359,52 @@
                     <div class="lastDepWith table2">
                         <ul>
                             <li>
-                                <span>kacemtrans</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>kacemtrans</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_01.png" alt="">
                             <li>
-                                <span>alexcandr</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>alexcandr</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_01.png" alt="">
                             </li>
                             <li>
-                                <span>atzf2e00d</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>atzf2e00d</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_02.png" alt="">
                             </li>
                             <li>
-                                <span>draghetto</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>draghetto</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_03.png" alt="">
                             </li>
                             <li>
-                                <span>TheDude</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>TheDude</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_02.png" alt="">
                             </li>
                             <li>
-                                <span>kacemtrans</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>kacemtrans</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_02.png" alt="">
                             </li>
                             <li>
-                                <span>alexcandr</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>alexcandr</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_02.png" alt="">
                             </li>
                             <li>
-                                <span>atzf2e00d</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>atzf2e00d</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_04.png" alt="">
                             </li>
                             <li>
-                                <span>draghetto</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>draghetto</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_04.png" alt="">
                             </li>
                             <li>
-                                <span>TheDude</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span class="icon-triangle-down"></span>15.32 USD</span><img
+                                <span>TheDude</span><span>Sep-05-2018 03:45:38 PM</span><span class="activeSum"><span
+                                    class="icon-triangle-down"></span>15.32 USD</span><img
                                     src="img/png/lastDep_05.png" alt="">
                             </li>
                         </ul>
@@ -518,5 +542,6 @@
             </div>
         </footer>
     </div>
+</div>
 </body>
 </html>

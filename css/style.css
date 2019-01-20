@@ -732,12 +732,9 @@ header .statistic .item3 .percent.active {
     z-index: -2;
 }
 
-/*.menuCalculator {*/
-/*text-align: left;*/
-/*}*/
+
 .menuCalculator li {
     display: inline-block;
-    /*padding-left: 100px;*/
     position: relative;
     margin-top: 147px;
 }
@@ -805,14 +802,6 @@ header .statistic .item3 .percent.active {
 .menuCalculator .plans {
     padding-left: 100px;
 }
-/*.plans .sup {*/
-    /*font-size: 18px;*/
-    /*line-height: 1;*/
-    /*vertical-align: top;*/
-/*}*/
-/*.menuCalculator .plans span {*/
-    /*display: block;*/
-/*}*/
 
 .menuCalculator .plans span:nth-child(1) {
     font-family: "Monda";
@@ -829,7 +818,6 @@ header .statistic .item3 .percent.active {
     line-height: 40px;
     letter-spacing: -0.05em;
     color: #e0186c;
-    /*display: block;*/
     margin-top: 3px;
 }
 
@@ -955,12 +943,6 @@ header .statistic .item3 .percent.active {
     color: #2b7fed;
 }
 
-.calculator .calcDep {
-    /*text-align: center;*/
-    /*width: 50%;*/
-    /*float: left;*/
-    /*padding: 0 30px 0 270px;*/
-}
 
 .calc {
     margin-top: 110px;
@@ -1068,7 +1050,6 @@ header .statistic .item3 .percent.active {
 }
 
 .calculator .btnFillColor2 {
-    /*display: inline-block;*/
     margin-top: 59px;
     margin-left: 472px;
 }
