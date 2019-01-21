@@ -1865,3 +1865,53 @@ header .faq span {
     vertical-align: bottom;
     text-align: right;
 }
+@media (max-width: 1439px) {
+    .container {
+        width: 1200px;
+    }
+}
+@media (max-width: 1199px) {
+    .container {
+        width: 950px;
+    }
+    header .backImg {
+        width: 1200px;
+        top: 0;
+        left: 50%;
+        margin-left: -600px;
+    }
+    .clock,
+    .logReg {
+        margin-left: 70px;
+    }
+    .menu li + li {
+        margin-left: 35px;
+    }
+    header .betnvest {
+        margin-top: 90px;
+    }
+    .about .menuAbout {
+        width: calc(100% - 600px);
+    }
+    .about .description {
+        width: 600px;
+    }
+    .menuAbout li.active, .menuQuestions li.active {
+        width: 269px;
+    }
+    .menuAbout .active::before,
+    .menuQuestions .active::before {
+        left: 231px;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+}
