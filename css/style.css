@@ -69,6 +69,9 @@ header .backImg {
 .menuSocial {
     position: relative;
     z-index: 1;
+    /*position: absolute;*/
+    /*left: calc((((100vw-1200px)/2)/2)-30px);*/
+    /*bottom: 145px;*/
 }
 
 .menuSocial span {
@@ -218,6 +221,7 @@ header .clock .time {
     display: inline-block;
     padding-left: 57px;
     position: relative;
+    width: 250px;
 }
 
 header .clock span:nth-child(2) {
@@ -229,7 +233,6 @@ header .clock span:nth-child(2) {
 
 header .dateClock {
     display: inline-block;
-    margin-left: 12px;
 }
 
 header .dateClock span {
@@ -1646,6 +1649,7 @@ footer .copyright {
 
 footer .social {
     text-align: right;
+    padding-left: 90px;
 }
 
 footer .menu {
