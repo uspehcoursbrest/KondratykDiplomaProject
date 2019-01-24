@@ -1473,6 +1473,7 @@ header .statistic .item3 .percent.active {
 .lastNews .itemNews {
     width: 333px;
     margin-top: 101px;
+    height: 412px;
 }
 
 .lastNews h3 {
@@ -1671,7 +1672,7 @@ footer .menu li.active a::before {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     position: absolute;
-    top: 24px;
+    top: 33px;
     left: 50%;
     margin-left: -5px;
     transform: rotate(180deg);

@@ -26,5 +26,15 @@ window.onload = function () {
         timer = setInterval(clock, 1000);
         clock();
     }
-clockStart();
+
+    clockStart();
+
+    var slider = $('.slides');
+    slider.owlCarousel({
+        items: 1,
+        dots: false,
+        nav: true,
+        navText: ['<', '>'],
+        loop: true
+    });
 }
