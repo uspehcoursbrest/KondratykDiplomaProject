@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = (function () {
     function clock() {
         var date = new Date(),
             day = date.getDate(),
@@ -31,10 +31,29 @@ window.onload = function () {
 
     var slider = $('.slides');
     slider.owlCarousel({
-        items: 1,
         dots: false,
         nav: true,
-        navText: ['<', '>'],
+        navText: ['<span class="icon-34"></span>', '<span class="icon-pointer-right"></span>'],
         loop: true
     });
-}
+
+    $('#tabs').tabs({
+        active: 0
+    });
+    $('#tabsCalc').tabs({
+        active: 0
+    })
+
+    var accord = $('.accordion');
+
+    accord.find('.que:not(.activeTex)').siblings('div').slideUp();
+
+    accord.find('.que').on('click', function () {
+        $(this).siblings('div').stop().slideToggle(500);
+        if ($(this).hasClass('activeTex')) {
+            $(this).removeClass('activeTex');
+        } else {
+            $(this).addClass('activeTex');
+        }
+    });
+})

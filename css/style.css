@@ -693,6 +693,18 @@ header .statistic .item3 .percent.active {
     margin-left: 40px;
     margin-top: 150px;
 }
+.about .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: none;
+    padding: 0;
+}
+
+.about  .ui-tabs .ui-tabs-nav li {
+    margin: 0;
+    float: none;
+}
+.about  .ui-helper-reset {
+    line-height: inherit;
+}
 
 .about .description {
     width: 745px;
@@ -783,8 +795,7 @@ header .statistic .item3 .percent.active {
     width: 321px;
     height: 0px;
     top: -30px;
-    left: 26%;
-    margin-left: -212px;
+    margin-left: -120px;
     border-bottom: 177px solid white;
     border-left: 101px solid transparent;
     border-right: 101px solid transparent;
@@ -848,7 +859,33 @@ header .statistic .item3 .percent.active {
     text-align: center;
     margin-top: 63px;
 }
+.calculator .ui-tabs {
+    padding: 0;
+}
+.calculator .ui-tabs .ui-tabs-nav li {
+    margin: unset;
+}
+.calculator .ui-tabs .ui-tabs-nav{
+    padding: 0;
+}
+.calculator .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left: -25px;
+    margin-right: 166px;
+    position: relative;
+    padding-left: 35px;
+}
+.calculator .ui-tabs .ui-tabs-nav li {
+    margin-top: 147px;
 
+}
+.calculator .ui-tabs .ui-tabs-nav li:nth-child(3) {
+    margin-left: 161px;
+}
+.calculator .ui-tabs .ui-tabs-panel {
+    padding: 0;
+}
 .myTarif {
     margin-top: 123px;
 }
@@ -1473,7 +1510,6 @@ header .statistic .item3 .percent.active {
 .lastNews .itemNews {
     width: 333px;
     margin-top: 101px;
-    height: 412px;
 }
 
 .lastNews h3 {
@@ -1513,7 +1549,47 @@ header .statistic .item3 .percent.active {
     margin-top: 45px;
     margin-left: 20px;
 }
-
+.slider {
+    position: relative;
+}
+.switch .active {
+   color: #034bcc;
+}
+.switch span:not(.active) {
+   color: #bed1f0;
+}
+.switch span[class^='icon'] {
+    line-height: 56px;
+    background-color: #eaeff9;
+    display: inline-block;
+    width: 37px;
+    text-align: center;
+}
+.switch .icon-34 {
+    position: absolute;
+    top: -62px;
+    left: 1067px;
+}
+.switch .icon-pointer-right {
+    position: absolute;
+    top: -62px;
+    left: 1117px;
+}
+/*.switch {*/
+    /*position: relative;*/
+/*}*/
+/*.switch .icon-34::before {*/
+    /*content: '';*/
+    /*!*display: block;*!*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-top: 56px solid transparent;*/
+    /*border-right: 17px solid #eaeff9;*/
+    /*border-bottom: 56px solid transparent;*/
+    /*position: absolute;*/
+    /*top: -62px;*/
+    /*left: 1067px;*/
+/*}*/
 
 .payments {
     position: relative;
@@ -1767,6 +1843,13 @@ header .faq span {
     left: 761px;
     top: 21px;
 }
+.questions span.icon-triangle-up .active {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 .accordion span.que {
     font-family: "Monda";
     font-weight: bold;
@@ -1789,17 +1872,18 @@ header .faq span {
     letter-spacing: 0.025em;
     color: #012c7a;
 }
-.questions .active p {
+.accordion span.activeTex + div {
     padding-top: 33px;
     padding-left: 4px;
+    padding-bottom: 33px;
 }
 .accordion span.activeTex {
     border-left: 4px solid #e0186c;
     color: #e0186c;
 }
-.active + .accordion {
-    padding-top: 40px;
-}
+/*span.activeTex + .accordion {*/
+    /*padding-top: 40px;*/
+/*}*/
 .remainQuestions {
     position: relative;
     z-index: 1;
