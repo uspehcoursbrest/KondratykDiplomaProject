@@ -56,4 +56,23 @@ window.onload = (function () {
             $(this).addClass('activeTex');
         }
     });
+
+    $('select').selectric();
+
+    $('#rangeSum').ionRangeSlider({
+        grid: true,
+        min: 50,
+        max: 100000,
+        from: 500,
+        step: 100,
+        grid_num: 16,
+        grid_margin: false,
+        onStart: function (data) {
+            $('#amount3').val(data.from);
+        },
+        onChange: function (data) {
+            $('#amount3').val(data.from)
+        }
+    });
+
 })
